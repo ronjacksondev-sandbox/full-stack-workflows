@@ -7,7 +7,7 @@ npm install node-pg-migrate
 
 ### Add migrate script
 ``` bash
-npm pkg set scripts.migrate="node-pg-migrate"
+npm pkg set scripts.migrate=node-pg-migrate
 ```
 
 

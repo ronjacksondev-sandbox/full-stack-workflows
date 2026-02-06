@@ -1,7 +1,5 @@
 # Setup Express
 
-## Setup Express App
-
 ### Install Express
 
 ``` bash

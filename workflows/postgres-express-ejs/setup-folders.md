@@ -2,20 +2,27 @@
 
 ### Setup root folders
 ``` bash
-# source code
+# Source code
 mkdir src
-# SQL migrations or ORM migrations
-mkdir migrations 
-# Seed data
-mkdir seeds
+# Static files
+mkdir public
+mkdir public/css
+mkdir public/js
+mkdir public/images
 # Code tests
 mkdir tests
 ```
 
 ### Setup sub folders
 ``` bash
+# Move into src
+cd src
 # DB infrastructure
 mkdir db
+# SQL migrations or ORM migrations
+mkdir db/migrations 
+# Seed data
+mkdir db/seeds
 # DB queries/data access
 mkdir models
 # Validation logic
@@ -28,11 +35,6 @@ mkdir services
 mkdir controllers
 # Request config
 mkdir routes
-# Static files
-mkdir public
-mkdir public/css
-mkdir public/js
-mkdir public/images
 # View pages
 mkdir views
 mkdir views/layouts

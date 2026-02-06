@@ -37,6 +37,10 @@ export default app;
 # .env
 PORT=3000
 ```
+or  
+``` bash
+echo 'PORT=3000' >> ../.env
+```
 
 ## Setup entry point
 

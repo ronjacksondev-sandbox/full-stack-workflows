@@ -8,10 +8,10 @@ npm install express
 
 ### Create the express app file
 ``` bash
-touch app.js
+touch src/app.js
 ```
 
-### Move cursor focus to explorer sidebar
+### Move cursor focus to Explorer panel
 > Ctrl + Shift + E
 
 ### Open app.js
@@ -19,25 +19,22 @@ touch app.js
 
 
 ### Code the express app
+- Configure express to look in src for the views folder
 ``` js
 // app.js
 
 import express from 'express';
 const app = express();
   
+app.set('views', './src/views');
 
 export default app;
 ```
 
 
 ### Enter port info to .env
-``` env
-# .env
-PORT=3000
-```
-or  
 ``` bash
-echo 'PORT=3000' >> ../.env
+echo 'PORT=3000' >> ./.env
 ```
 
 ## Setup entry point
@@ -47,7 +44,7 @@ echo 'PORT=3000' >> ../.env
 
 ### Create entry point file
 ``` bash
-touch server.js
+touch src/server.js
 ```
 
 ### Code entry point
@@ -64,7 +61,20 @@ app.listen(port, () => {
 
 ### Set entry point for 'main' in package.json
 ``` bash
-npm pkg set main=server.js
+npm pkg set main=src/server.js
+```
+
+### Test
+``` bash
+node src/server.js
+```
+- Close server with Ctrl + C
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds express setup'
 ```
 
 Next:  
+[Setup middleware](setup-middleware.md)

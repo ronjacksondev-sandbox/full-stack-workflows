@@ -39,7 +39,7 @@ npm install pg
 
 ### Create db.js file
 ``` bash
-touch db/index.js
+touch src/stdb/index.js
 ```
 
 ### Code a shared connection pool
@@ -53,6 +53,12 @@ const pool = new Pool({
 });
 
 export default pool;
+```
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds db index file'
 ```
 
 Next:  

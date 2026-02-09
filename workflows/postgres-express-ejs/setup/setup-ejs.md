@@ -1,0 +1,110 @@
+# Setup EJS
+
+### Install EJS
+``` bash
+npm install ejs
+npm install express-ejs-layouts
+```
+
+### Add EJS as view engine in app.js
+``` js
+// app.js
+import expressLayouts from "express-ejs-layouts";
+
+app.set("view engine", "ejs");
+app.use(expressLayouts);
+```
+
+### Create the header partial
+``` bash
+touch src/views/partials/header.ejs
+```
+
+### Write the header partial
+``` html
+<header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/announcements">Announcements</a>
+  </nav>
+  <hr />
+</header>
+```
+
+### Create the home page
+``` bash
+touch src/views/pages/index.ejs
+```
+
+### Write the home page content
+``` html
+<h1>Announcements</h1>
+<p>Welcome to the announcements home page!</p>
+```
+
+### Create the layout file
+- convention is to create a file called layout.ejs in the views root
+``` bash
+touch src/views/layout.ejs
+```
+
+### Write the layout file
+- body is the name express-ejs-layouts uses to inject the view page into the layout
+``` html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include("./partials/header") %>
+    <main>
+      <%- body %>
+    </main>
+  </body>
+</html>
+```
+### Create the index controller
+``` bash
+touch src/controllers/index.js
+```
+
+### Write the controller
+``` js
+const getIndex = (req, res) => {
+  res.render("pages/index", {title: "home"});
+};
+
+export default {
+  getIndex,
+};
+```
+
+### Create the index route
+``` bash
+touch src/routes/index.js
+```
+
+### Write the index route
+``` js
+import express from 'express';
+import indexController from '../controllers/index.js';
+
+const indexRouter = express.Router();
+
+indexRouter.get('/', indexController.getIndex);
+
+export default indexRouter;
+```
+
+### Mount the router in app.js
+``` js
+// app.js
+import indexRouter from './routes/index.js';
+
+app.use('/', indexRouter);
+```
+
+Next:  
+[Session overview](../session/overview.md)

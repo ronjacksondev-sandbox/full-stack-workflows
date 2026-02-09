@@ -11,5 +11,11 @@ npm install dotenv
 touch .env
 ```
 
+### Commit
+``` bash
+git add .
+git commit -m 'Adds dotenv package'
+```
+
 Next  
 [Setup folders](setup-folders.md)

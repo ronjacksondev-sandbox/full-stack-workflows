@@ -1,20 +1,9 @@
 # Setup Folders
 
-### Setup root folders
+### Create folders
 ``` bash
-# Source code
+# Server Source code folder
 mkdir src
-# Static files
-mkdir public
-mkdir public/css
-mkdir public/js
-mkdir public/images
-# Code tests
-mkdir tests
-```
-
-### Setup sub folders
-``` bash
 # Move into src
 cd src
 # DB infrastructure
@@ -37,12 +26,11 @@ mkdir controllers
 mkdir routes
 # View pages
 mkdir views
-mkdir views/layouts
+mkdir views/pages
 mkdir views/partials
 
-# Logging etc.
-mkdir utils
-
+# Move back out of src
+cd ../
 ```
 
 Next:  

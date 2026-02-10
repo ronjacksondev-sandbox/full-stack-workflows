@@ -11,6 +11,7 @@ npm install express-ejs-layouts
 // app.js
 import expressLayouts from "express-ejs-layouts";
 
+app.set('views', './src/views');
 app.set("view engine", "ejs");
 app.use(expressLayouts);
 ```

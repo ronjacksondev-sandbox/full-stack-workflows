@@ -25,12 +25,9 @@ touch src/app.js
 
 import express from 'express';
 const app = express();
-  
-app.set('views', './src/views');
 
 export default app;
 ```
-
 
 ### Enter port info to .env
 ``` bash

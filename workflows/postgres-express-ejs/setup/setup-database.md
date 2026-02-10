@@ -24,7 +24,7 @@ create database dev_demo_db;
 - @ = %40
 ``` bash
 # .env
-DATABASE_URL=postgres://postgres:<password>@localhost:5432/
+DATABASE_URL=postgres://postgres:<password>@localhost:5432/dev_demo_db
 ```
 
 ## Setup database driver

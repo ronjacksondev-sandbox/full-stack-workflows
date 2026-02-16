@@ -1,0 +1,25 @@
+{
+  "name": "full-stack-workflows",
+  "version": "1.0.0",
+  "description": "A web development training collection of step-by-step instructions to produce a web application.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronjacksondev-sandbox/full-stack-workflows.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ronjacksondev-sandbox/full-stack-workflows/issues"
+  },
+  "homepage": "https://github.com/ronjacksondev-sandbox/full-stack-workflows#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

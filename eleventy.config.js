@@ -4,6 +4,8 @@ import {
  } from "@11ty/eleventy";
 
 export default function(eleventyConfig) {
+  eleventyConfig.addGlobalData("layout", "base.html");
+
   eleventyConfig.addPlugin (EleventyHtmlBasePlugin, {
     baseHref: true ? "/full-stack-workflows/" : "/",
   });

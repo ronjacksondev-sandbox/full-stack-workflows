@@ -5,16 +5,16 @@ import {
  import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 
 
-export default function(eleventyConfig) {
+export default async function(eleventyConfig) {
   eleventyConfig.addGlobalData("layout", "base.html");
-
-  eleventyConfig.addPlugin (EleventyHtmlBasePlugin, {
-    baseHref: true ? "/full-stack-workflows/" : "/",
-  });
 
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addPlugin (EleventyHtmlBasePlugin, {
+    baseHref: "/full-stack-workflows/"
+  });
 
   return {
     pathPrefix: "/full-stack-workflows/",

@@ -5,6 +5,7 @@ import {
  import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 
 
+// Dynamic setup and plugins
 export default async function(eleventyConfig) {
   eleventyConfig.addGlobalData("layout", "base.html");
 
@@ -16,11 +17,16 @@ export default async function(eleventyConfig) {
     baseHref: "/full-stack-workflows/"
   });
 
-  return {
-    pathPrefix: "/full-stack-workflows/",
-    dir: {
-      input: ".",
-      output: "_site"
-    }
-  };
-}
+};
+
+// Static settings
+export const config = {
+  setTemplateFormats: ["md", "html"],
+  markdownTemplateEngine: false,
+  htmlTemplateEngine: "liquid",
+  pathPrefix: "/full-stack-workflows/",
+  dir: {
+    input: ".",
+    output: "_site"
+  }
+};

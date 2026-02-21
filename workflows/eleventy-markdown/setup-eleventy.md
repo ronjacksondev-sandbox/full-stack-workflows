@@ -7,63 +7,35 @@ npm install @11ty/eleventy --save-dev
 
 ### Append Eleventy build folder to gitignore
 ``` bash
+echo '' >> .gitignore
 echo "# Eleventy build folder" >> .gitignore
 echo "_site" >> .gitignore
 ```
 
-### Add Eleventy config file
-``` bash
-touch eleventy.config.js
-```
-
-### Write Eleventy configuration
-- Configure the input as the root directory
-- Configure the output build files as the _site folder
-- Configure dev server to run out of github repo directory with pathPrefix
-- Configure markdown links to use relative base so links point to github repo directory
-``` js
-import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
-
-export default async function(eleventyConfig) {
-
-  eleventyConfig.addPlugin (EleventyHtmlBasePlugin, {
-    baseHref: "/full-stack-workflows/"
-  });
-
-  return {
-    pathPrefix: "/full-stack-workflows/",
-    dir: {
-      input: ".",
-      output: "_site"
-    }
-  };
-}
-```
-
-### Add the root homepage entry file '/'
+### Add `index.md`
+- Default page to serve for root path request '/'
 - By convention eleventy looks for 'index'
 ``` bash
 touch index.md
 ```
 
-### Add homepage content
-```` markdown
-# Welcome to the homepage
-Check out our code
-``` js
-console.log('Hello markdown world');
+### Write `index.md`
+``` markdown
+# Hello markdown world!
+Welcome to our home page!  
+Checkout our code snippets!  
 ```
-````
 
-### Add layout file to wrap markdown files
+### Add `base.html`
 - Markdown is transformed into html but the html needs a `body` tag etc.
 ``` bash
 mkdir _includes
 touch _includes/base.html
 ```
 
-### Write layout file
+### Write `base.html`
 - Each markdown html is inserted into `content`
+
 ``` html
 <!DOCTYPE html>
 <html lang="en">
@@ -77,15 +49,36 @@ touch _includes/base.html
 </html>
 ```
 
-### Add configuration for layout
+
+### Add Eleventy config file
+``` bash
+touch eleventy.config.js
+```
+
+### Write Eleventy configuration
+- Configure global markdown files to be rendered inside the base layout.
+- Configure template formats for markdown and html.
+- Markdown files should not use a template format.
+- HTML files should use the liquid template format.
+- Eleventy should start searching for file input in root `.`
+- Eleventy should output build files into `_site` directory
 ``` js
-// eleventy.config.js
 
+// Dynamic setup and plugins
 export default async function(eleventyConfig) {
-
   eleventyConfig.addGlobalData("layout", "base.html");
+};
 
-}
+// Static settings
+export const config = {
+  setTemplateFormats: ["md", "html"],
+  markdownTemplateEngine: false,
+  htmlTemplateEngine: "liquid",
+  dir: {
+    input: ".",
+    output: "_site"
+  }
+};
 ```
 
 ### Add build and serve scripts to package.json
@@ -97,9 +90,15 @@ npm pkg set scripts.serve="eleventy --serve"
 
 ### Test setup and view in browser
 ``` bash
-npm run build
 npm run serve
 ```
 
+### Commit
+``` bash
+git add .
+git commit -m 'Adds eleventy setup'
+git push
+```
+
 Next:  
-[Add Styles](add-styles.md)
+[Add New Page](add-new-page.md)

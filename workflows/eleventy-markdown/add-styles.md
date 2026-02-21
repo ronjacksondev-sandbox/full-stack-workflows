@@ -1,26 +1,11 @@
 # Add Styles
 
-### Add classless css framework
-``` html
-<!-- base.html Head node-->
+- Add water.css classesless css framework
+- Add prism code syntax highlight plugin
 
+### Add classless css framework to `base.html`
+``` html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-```
-
-### Add syntax highlighting with prism
-``` bash
-npm install @11ty/eleventy-plugin-syntaxhighlight
-```
-
-### Add prism to config file
-``` js
-eleventyConfig.addPlugin(syntaxHighlight);
-```
-
-### Add prism css theme to base.html
-``` html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
-
 ```
 
 ### Test and view in browser
@@ -28,5 +13,12 @@ eleventyConfig.addPlugin(syntaxHighlight);
 npm run serve
 ```
 
+### Commit
+``` bash
+git add .
+git commit -m 'Adds css styles'
+git push
+```
+
 Next:  
-[Add Links](add-links.md)
+[Add Prism](add-prism.md)

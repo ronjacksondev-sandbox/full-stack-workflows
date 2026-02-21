@@ -60,5 +60,11 @@ jobs:
 > Go to repository > Settings > Pages > Build and Deployment > Source = Github Actions
 
 ### Commit and Push
-### Navigate to site in github pages
+``` bash
+git add .
+git commit -m 'Adds github pages config'
+git push
+```
 
+### Add github pages link to about section and view site
+> Github Repo > About sidebar > Settings > Website > Check - Use your Github Pages website

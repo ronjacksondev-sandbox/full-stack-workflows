@@ -39,7 +39,7 @@ npm install pg
 
 ### Create db.js file
 ``` bash
-touch src/stdb/index.js
+touch src/db/index.js
 ```
 
 ### Code a shared connection pool

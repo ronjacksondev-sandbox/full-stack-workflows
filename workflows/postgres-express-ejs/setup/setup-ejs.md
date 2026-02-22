@@ -28,7 +28,6 @@ touch src/views/partials/header.ejs
     <a href="/">Home</a>
     <a href="/announcements">Announcements</a>
   </nav>
-  <hr />
 </header>
 ```
 
@@ -107,5 +106,18 @@ import indexRouter from './routes/index.js';
 app.use('/', indexRouter);
 ```
 
+### Test
+- Home page should load at this point
+``` bash
+node src/server.js
+```
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds view setup'
+git push
+```
+
 Next:  
-[Session overview](../session/overview.md)
+[Go to next section - Login Overview](../login/overview.md)

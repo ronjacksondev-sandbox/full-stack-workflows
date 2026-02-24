@@ -23,11 +23,15 @@ touch src/views/partials/header.ejs
 
 ### Write the header partial
 ``` html
-<header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/announcements">Announcements</a>
-  </nav>
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Announcements</a>
+    <nav class="navbar-nav">
+      <a class="nav-link" href="/announcements">View</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
+  </div>
 </header>
 ```
 
@@ -56,6 +60,8 @@ touch src/views/layout.ejs
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <%- include("./partials/header") %>

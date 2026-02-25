@@ -25,11 +25,10 @@ touch src/views/partials/header.ejs
 ``` html
 <header class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">Announcements</a>
+    <a class="navbar-brand" href="#">Do Date</a>
     <nav class="navbar-nav">
-      <a class="nav-link" href="/announcements">View</a>
-      <a class="nav-link" href="#">About</a>
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="/tasks">View Tasks</a>
+      <a class="nav-link" href="/tasks/new">Add Task</a>
     </nav>
   </div>
 </header>
@@ -42,8 +41,8 @@ touch src/views/pages/index.ejs
 
 ### Write the home page content
 ``` html
-<h1>Announcements</h1>
-<p>Welcome to the announcements home page!</p>
+<h1>Do Date</h1>
+<p>Manage your tasks and do them on time!</p>
 ```
 
 ### Create the layout file

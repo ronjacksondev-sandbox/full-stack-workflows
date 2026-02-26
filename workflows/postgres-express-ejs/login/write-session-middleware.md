@@ -67,5 +67,33 @@ import { sessionMiddleware } from './middleware/session.js';
 app.use(sessionMiddleware);
 ```
 
+### Add `setCurrentUser.js` middleware
+``` bash
+touch src/middleware/setCurrentUser.js
+```
+
+### Write `setCurrentUser.js`
+``` js
+export function setCurrentUser(req, res, next) {
+  if (req.session?.userId) {
+    res.locals.currentUser = {
+      id: req.session.userId,
+      email: req.session.userEmail,
+    };
+  } else {
+    res.locals.currentUser = null;
+  }
+  next();
+}
+```
+
+### Mount `setCurrentUser.js` in `app.js`
+``` js
+import { setCurrentUser } from './middleware/setCurrentUser.js';
+```
+``` js
+app.use(setCurrentUser);
+```
+
 Next:  
 [Write auth middleware](write-auth-middleware.md)

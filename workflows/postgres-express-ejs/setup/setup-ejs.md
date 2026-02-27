@@ -66,6 +66,7 @@ touch src/views/layout.ejs
     <%- include("./partials/header") %>
     <main>
       <%- body %>
+      <%- locals.script || '' %>
     </main>
   </body>
 </html>

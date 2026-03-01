@@ -15,11 +15,11 @@
 npm install helmet
 ```
 
-### Mount helmet middleware
+### Mount helmet in `app.js`
 ``` js
-// app.js
 import helmet from 'helmet';
-
+```
+``` js
 app.use(helmet());
 ```
 
@@ -31,11 +31,11 @@ npm install morgan
 ```
 
 
-### Write morgan middleware
+### Mount morgan in `app.js`
 ``` js
-// app.js
 import morgan from 'morgan';
-
+```
+``` js
 app.use(morgan('dev'));
 ```
 
@@ -48,12 +48,11 @@ app.use(morgan('dev'));
 npm install cors
 ```
 
-
-### Mount cors middleware in app.js
+### Mount cors in `app.js`
 ``` js
-// app.js
 import cors from 'cors';
-
+```
+``` js
 app.use(cors());
 ```
 
@@ -65,18 +64,16 @@ app.use(cors());
 mkdir public
 ```
 
-### Configure static asset middleware
+### Mount static folder in `app.js`
 ``` js
-// app.js
 app.use(express.static('public'));
 ```
 
 
 ## Body parsing
 
-### Configure body parsing
+### Configure body parsing in `app.js`
 ``` js
-// app.js
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 ```
@@ -95,6 +92,8 @@ app.use((err, req, res, next) => {
 ``` bash
 node src/server.js
 ```
+- Expectation is no errors in console
+- App is not able to return any html yet.
 
 ### Commit
 ``` bash

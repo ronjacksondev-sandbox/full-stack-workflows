@@ -10,19 +10,8 @@ npm install express
 ``` bash
 touch src/app.js
 ```
-
-### Move cursor focus to Explorer panel
-> Ctrl + Shift + E
-
-### Open app.js
-> Highlight > Enter
-
-
-### Code the express app
-- Configure express to look in src for the views folder
+### Code `app.js`
 ``` js
-// app.js
-
 import express from 'express';
 const app = express();
 
@@ -31,6 +20,7 @@ export default app;
 
 ### Enter port info to .env
 ``` bash
+echo '' >> ./.env
 echo 'PORT=3000' >> ./.env
 ```
 

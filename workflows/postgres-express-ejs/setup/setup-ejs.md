@@ -6,13 +6,14 @@ npm install ejs
 npm install express-ejs-layouts
 ```
 
-### Add EJS as view engine in app.js
+### Add EJS as view engine in `app.js`
 ``` js
-// app.js
-import expressLayouts from "express-ejs-layouts";
-
+import expressLayouts from 'express-ejs-layouts';
+```
+- Add ejs setup after body parsing middleware
+``` js
 app.set('views', './src/views');
-app.set("view engine", "ejs");
+app.set('view engine', 'ejs');
 app.use(expressLayouts);
 ```
 
@@ -58,13 +59,14 @@ touch src/views/layout.ejs
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <%- include("./partials/header") %>
-    <main>
+    <main class="container my-4">
       <%- body %>
       <%- locals.script || '' %>
     </main>
@@ -104,11 +106,12 @@ indexRouter.get('/', indexController.getIndex);
 export default indexRouter;
 ```
 
-### Mount the router in app.js
+### Mount the router in `app.js`
 ``` js
-// app.js
 import indexRouter from './routes/index.js';
-
+```
+- Mount routes just above error middleware
+``` js
 app.use('/', indexRouter);
 ```
 

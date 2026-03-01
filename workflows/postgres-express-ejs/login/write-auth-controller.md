@@ -38,7 +38,6 @@ export async function signup(req, res, next) {
 
     // Set session
     req.session.userId = newUser.user_id;
-    req.session.userEmail = newUser.email;
 
     res.redirect(getSafeNextUrl(req.body.next));
   } catch (error) {
@@ -54,7 +53,6 @@ export async function login(req, res, next) {
 
     // Set session
     req.session.userId = user.user_id;
-    req.session.userEmail = user.email;
 
     res.redirect(getSafeNextUrl(req.body.next));
   } catch (error) {

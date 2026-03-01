@@ -74,17 +74,34 @@ touch src/middleware/setCurrentUser.js
 
 ### Write `setCurrentUser.js`
 ``` js
-export function setCurrentUser(req, res, next) {
-  if (req.session?.userId) {
-    res.locals.currentUser = {
-      id: req.session.userId,
-      email: req.session.userEmail,
-    };
-  } else {
-    res.locals.currentUser = null;
+import * as users from '../models/user.js';
+
+export async function setCurrentUser(req, res, next) {
+  res.locals.currentUser = null;
+
+  if (!req.session?.userId) {
+    return next();
   }
-  next();
-}
+
+  try {
+    const user = await users.findUserById(req.session.userId);
+    if (user) {
+      res.locals.currentUser = user;
+      next();
+    } else {
+      req.session.destroy((err) => {
+        if (err) {
+          res.clearCookie('connect.sid');
+          res.locals.currentUser = null;
+          next();
+        }
+      });
+    }
+  } catch (error) {
+    console.error("Middleware Error:", error);
+    next(error);
+  }
+};
 ```
 
 ### Mount `setCurrentUser.js` in `app.js`

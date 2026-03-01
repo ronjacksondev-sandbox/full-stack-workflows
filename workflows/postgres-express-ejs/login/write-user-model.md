@@ -31,6 +31,16 @@ export async function findUserById(userId) {
 
 export async function findUserByEmail(email) {
   const result = await pool.query(
+    `SELECT user_id, name, email, created_at
+     FROM users
+     WHERE email = $1`,
+     [email],
+  );
+  return result.rows[0] || null;
+}
+
+export async function findUserByEmailWithPassword(email) {
+  const result = await pool.query(
     `SELECT user_id, name, email, password_hash, created_at
      FROM users
      WHERE email = $1`,

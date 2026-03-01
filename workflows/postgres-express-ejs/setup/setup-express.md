@@ -31,9 +31,8 @@ echo 'PORT=3000' >> ./.env
 touch src/server.js
 ```
 
-### Code entry point
+### Code `server.js` entry point
 ``` js
-// server.js
 import 'dotenv/config';
 import app from './app.js';
 const port = process.env.PORT || 3000;
@@ -43,7 +42,7 @@ app.listen(port, () => {
 });
 ```
 
-### Set entry point for 'main' in package.json
+### Set package entry point as `server.js`
 ``` bash
 npm pkg set main=src/server.js
 ```
@@ -52,6 +51,8 @@ npm pkg set main=src/server.js
 ``` bash
 node src/server.js
 ```
+- Expectation is no errors in console.
+- Web app will not return html yet
 - Close server with Ctrl + C
 
 ### Commit

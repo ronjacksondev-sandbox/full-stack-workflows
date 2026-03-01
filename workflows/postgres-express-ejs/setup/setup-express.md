@@ -26,9 +26,6 @@ echo 'PORT=3000' >> ./.env
 
 ## Setup entry point
 
-### Switch to VS Code terminal
-> Ctrl + `
-
 ### Create entry point file
 ``` bash
 touch src/server.js

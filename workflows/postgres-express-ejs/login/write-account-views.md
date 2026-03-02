@@ -16,3 +16,17 @@ touch src/views/pages/account.ejs
   <a href="auth/logout">Logout</a>
 </div>
 ```
+
+### Test
+``` bash
+node src/server.js
+```
+- Signup page should be able to create new account
+- Login page should be able to login user
+- Account page should be able to show logged in user details
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds account views'
+```

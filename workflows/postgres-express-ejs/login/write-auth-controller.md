@@ -1,10 +1,5 @@
 # Write auth controller
 
-### Install bcrypt
-``` bash
-npm install bcrypt
-```
-
 ### Create file
 ``` bash
 touch src/controllers/authController.js
@@ -71,6 +66,12 @@ export function logout(req, res, next) {
   });
 }
 
+```
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds auth controller'
 ```
 
 Next:  

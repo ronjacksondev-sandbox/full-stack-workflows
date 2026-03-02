@@ -1,4 +1,4 @@
-
+# Write user migration
 
 ### Initialize migration file
 ``` bash
@@ -6,7 +6,6 @@ npm run migrate create add-user-table
 ```
 
 ### Write UP migration implementation
-- In production consider session table and user_id=uuid
 ``` js
 pgm.createTable('users', {
   user_id: {
@@ -47,19 +46,10 @@ pgm.dropTable('users');
 npm run migrate up
 ```
 
-### Connect to db and view table
+### Commit
 ``` bash
-psql -U postgres -d dev_demo_db
-```
-
-### View the users table with \describe
-``` bash
-\d users';
-```
-
-### Close psql
-``` bash
-\q
+git add .
+git commit -m 'Adds session and user migrations'
 ```
 
 Next:  

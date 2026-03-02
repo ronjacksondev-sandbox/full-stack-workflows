@@ -18,5 +18,19 @@ accountRouter.get('/', requireAuth, getAccountPage);
 export default accountRouter;
 ```
 
+### Mount in `app.js`
+``` js
+import accountRouter from './routes/account.js';
+```
+``` js
+app.use('/account', accountRouter);
+```
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds account routes'
+```
+
 Next:  
 [Write auth views](write-auth-views.md)

@@ -35,5 +35,11 @@ export function validateLoginInput({ email, password }) {
 
 ```
 
+### Commit 
+``` bash
+git add .
+git commit -m 'Adds auth validator
+```
+
 Next:  
 [Write Auth Service](write-auth-service.md)

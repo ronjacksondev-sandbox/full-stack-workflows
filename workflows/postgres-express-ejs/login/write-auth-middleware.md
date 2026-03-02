@@ -15,5 +15,11 @@ export function requireAuth(req, res, next) {
 }
 ```
 
+### Commit
+``` bash
+git add .
+git commit -m 'Adds auth middleware
+```
+
 Next:  
 [Write auth validator](write-auth-validator.md)

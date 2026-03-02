@@ -65,6 +65,11 @@ touch src/views/pages/login.ejs
   <% } %>
 </nav>
 ```
+### Commit
+``` bash
+git add .
+git commit -m 'Adds auth views'
+```
 
 Next:  
 [Write account views](write-account-views.md)

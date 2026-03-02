@@ -50,5 +50,11 @@ export async function findUserByEmailWithPassword(email) {
 }
 ```
 
+### Commit
+``` bash
+git add .
+git commit -m 'Adds user model'
+```
+
 Next:  
 [Write session middleware](write-session-middleware.md)

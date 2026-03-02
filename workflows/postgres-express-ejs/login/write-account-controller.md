@@ -2,12 +2,12 @@
 
 ### Add `accountController.js`
 ``` bash
-touch src/controllers/accountController.js`
+touch src/controllers/accountController.js
 ```
 
 ### Write `accountController.js`
 ``` js
-import * as users from '../models/user.js';
+import { findUserById } from '../models/user.js';
 
 export async function getAccountPage(req, res, next) {
   try {
@@ -15,7 +15,7 @@ export async function getAccountPage(req, res, next) {
       return res.redirect('/auth/login');
     }
 
-    const user = await users.findUserById(req.session.userId);
+    const user = await findUserById(req.session.userId);
     if (!user) {
       return res.redirect('/auth/login');
     }
@@ -28,6 +28,12 @@ export async function getAccountPage(req, res, next) {
     next(error);
   }
 }
+```
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds account controller'
 ```
 
 Next:  

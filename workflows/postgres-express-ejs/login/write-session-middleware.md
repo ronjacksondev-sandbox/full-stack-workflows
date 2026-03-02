@@ -2,14 +2,6 @@
 
 ### Install session middleware and session store
 
-- Install express-session
-- Manages functionality for session cookies
-- Adds a `session` property to the `req` object
-- Adding a value to `session` property triggers express-session to generate cookie
-
-- Install connect-pg-simple
-- Create a store in postgres
-
 ``` bash
 npm install express-session
 npm install connect-pg-simple
@@ -34,14 +26,14 @@ touch src/middleware/session.js
 
 ### Write session middleware
 ``` js
-import session from 'express-session';
+import expressSession from 'express-session';
 import connectPgSimple from 'connect-pg-simple';
 import pool from '../db/index.js';
 
-const PgSession = connectPgSimple(session);
+const PgSessionStore = connectPgSimple(expressSession);
 
-export const sessionMiddleware = session({
-  store: new PgSession({
+const sessionMiddleware = expressSession({
+  store: new PgSessionStore({
     pool,
     tableName: 'session',
   }),
@@ -55,14 +47,16 @@ export const sessionMiddleware = session({
     sameSite: 'lax',
   },
 });
+
+export default sessionMiddleware;
 ```
 
 
 ### Mount middleware in `app.js`
 ``` js
-import { sessionMiddleware } from './middleware/session.js';
+import sessionMiddleware from './middleware/session.js';
 ```
-`// Put app.use() before routes`
+- Put `app.use()` before routes
 ``` js
 app.use(sessionMiddleware);
 ```
@@ -74,7 +68,7 @@ touch src/middleware/setCurrentUser.js
 
 ### Write `setCurrentUser.js`
 ``` js
-import * as users from '../models/user.js';
+import { findUserById } from '../models/user.js';
 
 export async function setCurrentUser(req, res, next) {
   res.locals.currentUser = null;
@@ -84,7 +78,7 @@ export async function setCurrentUser(req, res, next) {
   }
 
   try {
-    const user = await users.findUserById(req.session.userId);
+    const user = await findUserById(req.session.userId);
     if (user) {
       res.locals.currentUser = user;
       next();
@@ -106,10 +100,17 @@ export async function setCurrentUser(req, res, next) {
 
 ### Mount `setCurrentUser.js` in `app.js`
 ``` js
-import { setCurrentUser } from './middleware/setCurrentUser.js';
+import setCurrentUser from './middleware/setCurrentUser.js';
 ```
+- Place `app.use()` below session middleware
 ``` js
 app.use(setCurrentUser);
+```
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds session middleware'
 ```
 
 Next:  

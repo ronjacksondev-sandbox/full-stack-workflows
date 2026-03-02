@@ -30,5 +30,11 @@ import authRouter from './routes/auth.js';
 app.use('/auth', authRouter);
 ```
 
+### Commit
+``` bash
+git add .
+git commit -m 'Adds auth routes'
+```
+
 Next:  
 [Write account routes](write-account-routes.md)

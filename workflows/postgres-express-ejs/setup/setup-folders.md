@@ -15,7 +15,7 @@ mkdir db/seeds
 # DB queries/data access
 mkdir models
 # Validation logic
-mkdir validation
+mkdir validators
 # Cross cutting concerns
 mkdir middleware
 # Business logic

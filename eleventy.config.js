@@ -13,6 +13,13 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  eleventyConfig.addPassthroughCopy({
+  "node_modules/prismjs/prism.js": "js/prism.js",
+  "node_modules/prismjs/plugins/toolbar/prism-toolbar.js": "js/prism-toolbar.js",
+  "node_modules/prismjs/plugins/toolbar/prism-toolbar.css": "css/prism-toolbar.css",
+  "node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js": "js/prism-copy-to-clipboard.js"
+});
+
   eleventyConfig.addPlugin (EleventyHtmlBasePlugin, {
     baseHref: "/full-stack-workflows/"
   });

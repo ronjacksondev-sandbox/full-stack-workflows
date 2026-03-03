@@ -26,7 +26,7 @@ touch src/views/partials/header.ejs
 ``` html
 <header class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">Do Date</a>
+    <a class="navbar-brand" href="/">Do Date</a>
     <nav class="navbar-nav">
       <a class="nav-link" href="/tasks">View Tasks</a>
       <a class="nav-link" href="/tasks/new">Add Task</a>

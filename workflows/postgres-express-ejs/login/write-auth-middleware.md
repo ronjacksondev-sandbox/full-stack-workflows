@@ -7,7 +7,7 @@ touch src/middleware/requireAuth.js
 
 ### Write `requireAuth.js`
 ``` js
-export function requireAuth(req, res, next) {
+export default function requireAuth(req, res, next) {
   if (req.session?.userId) return next();
 
   const nextUrl = encodeURIComponent(req.originalUrl || '/');

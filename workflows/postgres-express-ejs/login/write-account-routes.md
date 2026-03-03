@@ -9,21 +9,21 @@ touch src/routes/account.js
 ``` js
 import express from 'express';
 import { getAccountPage } from '../controllers/accountController.js';
-import { requireAuth } from '../middleware/requireAuth.js';
 
 const accountRouter = express.Router();
 
-accountRouter.get('/', requireAuth, getAccountPage);
+accountRouter.get('/', getAccountPage);
 
 export default accountRouter;
 ```
 
 ### Mount in `app.js`
 ``` js
+import requireAuth from './middleware/requireAuth.js';
 import accountRouter from './routes/account.js';
 ```
 ``` js
-app.use('/account', accountRouter);
+app.use('/account', requireAuth, accountRouter);
 ```
 
 ### Commit

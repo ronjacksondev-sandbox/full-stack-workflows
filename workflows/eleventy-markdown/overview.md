@@ -9,5 +9,6 @@ Use eleventy to transform markdown into html
 1. [Setup URL Plugin](setup-url-plugin.md)
 1. [Add Styles](add-styles.md)
 1. [Add Prism](add-prism.md)
+1. [Add Prism Toolbar](add-prism-toolbar.md)
 1. [Setup Base Plugin](setup-base-plugin.md)
 1. [Setup Deployment](setup-deployment.md)

@@ -46,4 +46,4 @@ git push
 ```
 
 Next:  
-[Setup Base Plugin](setup-base-plugin.md)
+[Add Prism toolbar](add-prism-toolbar.md)

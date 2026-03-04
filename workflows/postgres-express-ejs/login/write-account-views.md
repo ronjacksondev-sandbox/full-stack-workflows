@@ -19,7 +19,7 @@ touch src/views/pages/account.ejs
 
 ### Test
 ``` bash
-node src/server.js
+npm run dev
 ```
 - Signup page should be able to create new account
 - Login page should be able to login user

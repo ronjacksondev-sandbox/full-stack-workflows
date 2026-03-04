@@ -118,7 +118,7 @@ app.use('/', indexRouter);
 ### Test
 - Home page should load at this point
 ``` bash
-node src/server.js
+npm run dev
 ```
 
 ### Commit

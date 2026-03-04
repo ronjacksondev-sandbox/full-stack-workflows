@@ -90,7 +90,7 @@ app.use((err, req, res, next) => {
 
 ### Test
 ``` bash
-node src/server.js
+npm run dev
 ```
 - Expectation is no errors in console
 - App is not able to return any html yet.

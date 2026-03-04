@@ -47,9 +47,14 @@ app.listen(port, () => {
 npm pkg set main=src/server.js
 ```
 
+### Add `dev` script
+``` bash
+npm pkg set scripts.dev="node src/server.js"
+```
+
 ### Test
 ``` bash
-node src/server.js
+npm run dev
 ```
 - Expectation is no errors in console.
 - Web app will not return html yet

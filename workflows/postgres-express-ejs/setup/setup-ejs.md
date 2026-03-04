@@ -46,6 +46,21 @@ touch src/views/pages/index.ejs
 <p>Manage your tasks and do them on time!</p>
 ```
 
+### Add bootsrap
+``` bash
+npm install bootsrap
+```
+
+### Copy bootstrap files
+``` bash
+mkdir -p public/css public/js && \
+cp node_modules/bootstrap/dist/css/bootstrap.min.css public/css/ && \
+cp node_modules/bootstrap/dist/css/bootstrap.min.css.map public/css/ && \
+cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js public/js/ && \
+cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map public/js/
+```
+
+
 ### Create the layout file
 - convention is to create a file called layout.ejs in the views root
 ``` bash
@@ -61,8 +76,8 @@ touch src/views/layout.ejs
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <%- include("./partials/header") %>

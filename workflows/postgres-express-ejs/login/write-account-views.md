@@ -13,7 +13,9 @@ touch src/views/pages/account.ejs
 <p><strong>Email:</strong> <%= user.email %></p>
 
 <div>
-  <a href="auth/logout">Logout</a>
+  <form method="POST" action="auth/logout">
+    <button type="submit" class="btn btn-link px-0">Logout</button>
+  </form>
 </div>
 ```
 

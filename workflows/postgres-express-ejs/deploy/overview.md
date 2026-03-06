@@ -38,3 +38,6 @@ app.set('trust proxy', 1);
 > **Environment Variables:** \<add applicable variables>
 
 > Click > Deploy Website
+
+Next:  
+[Next section - Add tags](../add-tags/overview.md)

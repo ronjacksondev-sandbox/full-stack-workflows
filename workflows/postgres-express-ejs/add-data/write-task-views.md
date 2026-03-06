@@ -137,19 +137,21 @@ touch src/views/pages/tasks/index.ejs
 <% if (tasks && tasks.length > 0) { %>
   <div class="list-group">
     <% tasks.forEach(function(task) { %>
-      <a href="/tasks/<%= task.task_id %>" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+      <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center gap-2">
-          <% if (task.completed) { %>
-            <span class="badge bg-success rounded-pill">Done</span>
-          <% } else { %>
-            <span class="badge bg-secondary rounded-pill">To do</span>
-          <% } %>
-          <span class="<%= task.completed ? 'text-decoration-line-through text-muted' : '' %>"><%= task.title %></span>
+          <a href="/tasks/<%= task.task_id %>" class="link-body-emphasis text-decoration-none">
+            <% if (task.completed) { %>
+              <span class="badge bg-success rounded-pill">Done</span>
+            <% } else { %>
+              <span class="badge bg-secondary rounded-pill">To do</span>
+            <% } %>
+            <span class="<%= task.completed ? 'text-decoration-line-through text-muted' : '' %>"><%= task.title %></span>
+          </a>
         </div>
         <% if (task.due_date) { %>
           <small class="text-muted"><%= new Date(task.due_date).toLocaleDateString() %></small>
         <% } %>
-      </a>
+      </div>
     <% }); %>
   </div>
 <% } else { %>

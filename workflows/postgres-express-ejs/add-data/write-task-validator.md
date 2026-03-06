@@ -2,7 +2,7 @@
 
 ### Add `taskValidators.js`
 ``` bash
-touch src/validators/taskValidators.js`
+touch src/validators/taskValidators.js
 ```
 
 ### Write `taskValidators.js`
@@ -44,7 +44,7 @@ export function validateUpdateTask({title, due_date, completed}) {
     errors.push("Completed must be a boolean.");
   }
 
-  if (due_date !== undefined && isNaN(Date.parse(due_date))) {
+  if (due_date !== undefined && due_date !== null && isNaN(Date.parse(due_date))) {
     errors.push("Due date must be a valid date string.");
   }
 

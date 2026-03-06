@@ -6,7 +6,7 @@ touch src/models/task.js
 ```
 
 
-### WRite `task.js` model
+### Write `task.js` model
 ``` js
 import pool from "../db/index.js";
 

@@ -7,5 +7,10 @@ A web development training collection of step-by-step instructions to produce a 
 ## Static Backend
 - [Eleventy Markdown](workflows/eleventy-markdown/overview.md)
 
+### Client Side Render
+
+#### React
+- [React](workflows/react/overview.md)
+
 ## Dynamic Backend
 - [Postgres Express EJS](workflows/postgres-express-ejs/overview.md)

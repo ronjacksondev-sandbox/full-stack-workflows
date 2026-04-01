@@ -3,12 +3,12 @@
 - Because markdown uses file system paths, these links do not work when rendered as html.
 - We can use the eleventy plugin InputPath to URL to convert file system links to URLs.
 
-### Import plugin
+### Import plugin on `eleventy.config.js`
 ``` js
 import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 ```
 
-### Add plugin to `eleventy.config.js`
+### Add plugin on `eleventy.config.js` to default function
 ``` js
 eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 ```

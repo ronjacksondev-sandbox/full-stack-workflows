@@ -12,6 +12,7 @@
 ``` bash
 npm run serve
 ```
+- Expectation is that page should be centered with some basic styling added
 
 ### Commit
 ``` bash

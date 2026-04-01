@@ -26,22 +26,26 @@ Welcome to our home page!
 Checkout our code snippets!  
 ```
 
-### Add `base.html`
-- Markdown is transformed into html but the html needs a `body` tag etc.
+### Add `base.html` layout
+- _includes is the default location where Eleventy looks for layout files
+- We will configure eleventy to look for `base.html`
+- This is all because markdown is transformed into html but the html needs a layout/`body` tag to go in
+
 ``` bash
 mkdir _includes
 touch _includes/base.html
 ```
 
 ### Write `base.html`
-- Each markdown html is inserted into `content`
-
+- Each markdown file is converted to html and inserted into the  `content` placeholder
+- `content` is an eleventy reserved variable name
 ``` html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-width=1.0">
+    <title>Code Docs</title>
   </head>
   <body>
     {{ content }}
@@ -89,6 +93,7 @@ npm pkg set scripts.serve="eleventy --serve"
 
 
 ### Test setup and view in browser
+- Expectation is to load the Hello World page
 ``` bash
 npm run serve
 ```

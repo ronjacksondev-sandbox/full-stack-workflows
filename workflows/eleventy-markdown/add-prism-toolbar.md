@@ -1,13 +1,14 @@
 # Add prism toolbar
 
 - Adds prism toolbar and a copy to clipboard button.
+- Install node package as an easy way to get the files locally and then copy them to public folder
 
 ### Generate prism files
 ``` bash
 npm install prismjs
 ```
 
-### Add passthrough copy in `eleventy.config.js`
+### Add passthrough copy in `eleventy.config.js` to default function
 ``` js
 eleventyConfig.addPassthroughCopy({
   "node_modules/prismjs/prism.js": "js/prism.js",
@@ -19,16 +20,27 @@ eleventyConfig.addPassthroughCopy({
 
 ### Add toolbar css to `head` in `base.html`
 ``` html
-<link rel="stylesheet" href="/css/prism-toolbar.css">
+<link rel="stylesheet" href="/public/css/prism-toolbar.css">
 ```
 
 ### Add scripts right before closing `</body>`
-- Set prism to manual mode since we are rendering server side
 ``` html
-<script src="/js/prism.js"></script>
-<script src="/js/prism-toolbar.js"></script>
-<script src="/js/prism-copy-to-clipboard.js"></script>
+<script src="/public/js/prism.js"></script>
+<script src="/public/js/prism-toolbar.js"></script>
+<script src="/public/js/prism-copy-to-clipboard.js"></script>
+```
+
+### View code snippets
+``` bash
+npm run serve
+```
+- Expectation is when hovering over the snippet that a copy button will appear
+
+### Commit
+``` bash
+git add .
+git commit -m 'Adds prism toolbar and copy button'
 ```
 
 Next:  
-[Setup Base Plugin](setup-base-plugin.md)
+[Add Copy Box](add-copy-box.md)

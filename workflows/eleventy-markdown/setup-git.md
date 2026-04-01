@@ -2,11 +2,12 @@
 
 ## Initialize Git Repo
 
-### Create repository on cloud host and get url
+### Create `public` repository on GitHub and copy url to clipboard
+- Repository is public so github pages can run without premium subscription
 
 ### Open terminal on local machine
 
-### Create directory
+### Create `code-docs-##` directory
 ``` bash
 mkdir <folder-name>
 ```
@@ -19,6 +20,11 @@ cd <folder-name>
 ### Initialize git repository
 ``` bash
 git init
+```
+
+### Name branch
+``` bash
+git branch -m main
 ```
 
 ### Create initial commit
@@ -37,21 +43,19 @@ git remote add origin <url path>
 ### Push repo and set default upstream repo and branch for pushing
 - Upstream denotes the master copy
 ``` bash
-git push --set-upstream origin <branch>
+git push --set-upstream origin main
 ```
 
 ## Setup initial repo files
 
 ### Create gitignore
-- Note: this command is a nodejs specific way of auto generating a gitignore
-- The template parameter takes values such as node, python, dotnet etc.
 ``` bash
-npx gitignore <template>
+npx gitignore node
 ```
 
 ### Create README.md
 ``` bash
-echo '<Project name>' >> README.md
+echo '# Code Docs' >> README.md
 ```
 
 ### Commit files

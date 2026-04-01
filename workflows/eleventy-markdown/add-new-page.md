@@ -35,9 +35,9 @@ Links
 ``` bash
 npm run serve
 ```
-- Open Homepage
-- Click Basic Javascript Link
-- Note: the link is broken link because it goes to basic-javascript.md
+- Expectation is that page loads but link is broken
+- Link is broken link because it goes to a .md file => basic-javascript.md
+- Fix the link in the next step before making a commit
 
 Next:  
 [Setup URL Plugin](setup-url-plugin.md)

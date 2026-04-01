@@ -1,5 +1,9 @@
 # Setup deployment
 
+### Configure Github Actions (Go to GitHub.com)
+> Go to repository > Settings > Pages > Build and Deployment > Source = Github Actions
+
+
 ### Create Github Actions workflow
 ``` bash
 mkdir .github
@@ -55,9 +59,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
-
-### Configure Github Actions
-> Go to repository > Settings > Pages > Build and Deployment > Source = Github Actions
 
 ### Commit and Push
 ``` bash

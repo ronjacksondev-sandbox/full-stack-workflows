@@ -44,9 +44,11 @@ touch index.html
 
 ### Write page elements
 `DOCTYPE`  
+
 - html
 
 `html`  
+
 - lang="en"
 
 ### Write head elements
@@ -63,9 +65,9 @@ touch index.html
 
 
 `title` 
-``` text
-Duo Budget – A Clear View of Your Time and Money
-``` 
+
+<copy-box title="Content">Duo Budget – A Clear View of Your Time and Money</copy-box>
+
 `viewport`  
 - name="viewport"
 - content="width=device-width, initial-scale=1.0"
@@ -78,13 +80,12 @@ Duo Budget – A Clear View of Your Time and Money
 `header`  
 
 `h1`  
-``` text
-Duo Budget
-```
+
+<copy-box title="Content">Duo Budget</copy-box>
+
 `p`  
-``` text
-A clear view of your time and money in one place.
-```
+
+<copy-box title="Content">A clear view of your time and money in one place.</copy-box>
 
 #### Write main section
 
@@ -98,14 +99,11 @@ A clear view of your time and money in one place.
 `h2`  
 - id="section-intro"  
 
-``` text
-Time is Money
-```
+<copy-box title="Content">Time is Money</copy-box>
 
 `p`
-``` text
-When time and money live in different apps, it’s hard to understand how they influence each other. Duo Budget connects them in one simple system.
-```
+
+<copy-box title="Content">When time and money live in different apps, it’s hard to understand how they influence each other. Duo Budget connects them in one simple system.</copy-box>
 
 #### Write features section
 `section`
@@ -114,9 +112,7 @@ When time and money live in different apps, it’s hard to understand how they i
 `h2`  
 - id="section-features"  
 
-``` text
-How Duo Budget helps
-```
+<copy-box title="Content">How Duo Budget helps</copy-box>
 
 `ul` => `li`  
 Give each feature name `strong` emphasis
@@ -138,9 +134,8 @@ Give each feature name `strong` emphasis
 `h2`
 - id="section-audience"  
 
-``` text
-Can it help you?
-```
+<copy-box title="Content">Can it help you?</copy-box>
+
 
 `dl` => `dt` => `dd`
 
@@ -163,22 +158,18 @@ Can it help you?
 `h2`  
 - id="section-approach"  
 
-``` text
-A simple, incremental approach
-```
+<copy-box title="Content">A simple, incremental approach</copy-box>
 
 `p`
-``` text
-Duo Budget is growing step by step, starting with the essentials and expanding as the vision evolves.
-```
+
+<copy-box title="Content">Duo Budget is growing step by step, starting with the essentials and expanding as the vision evolves.</copy-box>
 
 ### Write footer
 `footer`
 
 `p`
-```
-&copy; Duo Budget
-```
+
+<copy-box title="Content">&amp;copy; Duo Budget</copy-box>
 
 ## Preview
 > Open files explorer from vs code terminal

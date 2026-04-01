@@ -190,7 +190,7 @@ mkdir -p .github/workflows
 touch .github/workflows/deploy.yml
 ```
 
-## Write workflow in nano buffer
+## Write workflow
 ``` yaml
 name: Deploy static site
 

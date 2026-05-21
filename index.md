@@ -1,20 +1,30 @@
 # Full Stack Workflows
 
-A web development training collection of step-by-step instructions to produce a web application.
+These workflows are sets of small tutorial projects that you can build and deploy to develop full-stack muscle memory.
 
-- Be aware some steps assume certain software and configuration is already setup
+## Course Outline
+View the list of projects on the [course outline page](course-outline.md).  
 
-## Static Backend
-### Static HTML
-- [Landing page](workflows/static-landing-page/overview.md)
+## Basics of a workflow
+- Read the tutorial steps.
+- Follow the steps on your local workstation.
+    - Setup dev environment
+    - Setup and code frontend/backend/database layers.
+    - Setup hosting infrastructure and deploy.
 
-### Static Site Generator
-- [Eleventy Markdown](workflows/eleventy-markdown/overview.md)
+## Who is this for?
+- This is for entry-level developers who want to get their full-stack reps in.  
+- This is also for for anyone who just wants to go for a code run to keep things fresh.  
 
-### Client Side Render
+>If you have no experience in web development then consider trying [freecodecamp.org](https://www.freecodecamp.org/) instead.
 
-#### React
-- [React](workflows/react/overview.md)
+## Attempted Learning Goals
+- Relatively easy to finish.
+- Iterate the full stack.
+- Introduce concepts progressively.
+- Keep projects somewhat minimal.
+- Observe a product lifecycle
 
-## Dynamic Backend
-- [Postgres Express EJS](workflows/postgres-express-ejs/overview.md)
+## Ready to get started?
+Go to the [course outline page](course-outline.md) and click on the first project.
+

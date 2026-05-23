@@ -4,6 +4,8 @@ These project workflows walkthrough the product lifecycle of a theoretical budge
 
 Duo Budget is an idea for a web app that helps you budget time and money.
 
+Note: This a coding tutorial and the business concepts are theoretical and not recommended for actual production.
+
 ## Product Concept  
 ### Tech Stack: `Static Web Site`
 ### Projects

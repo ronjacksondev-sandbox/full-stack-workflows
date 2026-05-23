@@ -2,6 +2,8 @@
 
 The founder of Duo Budget has organized the major conceptual idea for a software application into a Product Vision Board.  
 
+Estimated Time: 30-60 minutes
+
 After reading the overview you can get started on the [first workflow step](setup-git.md).
 
 ## Objective
@@ -10,7 +12,7 @@ Take the founder's product vision outline and produce a static web page so the f
 ## Requirements
 - Valid semantic HTML document
 - Basic aesthetic styling
-- Integrate the colors orange and green
+- Integrate potential branding colors (orange and green)
 - Dark mode toggle
 
 ## Tech Stack

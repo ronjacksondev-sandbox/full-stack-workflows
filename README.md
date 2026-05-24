@@ -1,6 +1,9 @@
 # Full Stack Workflows
 
-These workflows are sets of small tutorial projects that you can build and deploy to develop full-stack muscle memory.
+These workflows are sets of small web tutorial projects that you can build and deploy to develop full-stack muscle memory.
+
+Target OS: Windows
+Target Environment: Node
 
 ## How do I use this?
 This is an informational content repository and is intended to be read on GitHub pages at 

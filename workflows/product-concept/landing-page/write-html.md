@@ -1,46 +1,39 @@
-# Static landing page
 
-## Create remote repository
-> GitHub > New Repository
-> Copy link to remote repository
+Document Control Attributes
+Project Name:
+Page Title:
+URL Slug
+Page Description (SEO)
 
-## Add directory
-``` bash
-mkdir landing-page
-```
 
-## Initialize git
-``` bash
-cd landing-page
-git init
-```
 
-## Add git remote
-``` bash
-git remote add origin <remote-repo-link>
-```
+Main title / hero headline
+Hero subheading / lead statement
+Page description / meta copy
+Section heading: intro statement
+Intro paragraph / value proposition
+Section heading: feature overview
+Feature list item: shared categories
+Feature list item: yearly projections
+Feature list item: unified dashboard
+Section heading: audience questions
+Audience copy block / problem-led prompts
+Audience item: "Are you busy?"
+Audience item: "Are you a planner?"
+Audience item: "Are you curious?"
+Section heading: approach statement
+Approach paragraph / process explanation
+Aside heading: supporting thought
+Aside copy / contextual note
+Aside link(s) / external reference
+Footer disclaimer / status note
+Footer copyright notice
 
-## Setup branch
-``` bash
-git branch -M main
-```
 
-## Setup initial commit
-``` bash
-git commit --allow-empty -m 'Initial commit'
-```
+# Write HTML
 
-## Push and set upstream repo
-``` bash
-git push --set-upstream origin main
-```
+## Create 
 
-## Add `index.html`
-``` bash
-touch index.html
-```
-
-## Write HTML
 
 ### Write page elements
 `DOCTYPE`  
@@ -184,40 +177,4 @@ git add .
 git commit -m 'Adds index.html
 ```
 
-## Add deploy workflow for GitHub pages
-``` bash
-mkdir -p .github/workflows
-touch .github/workflows/deploy.yml
-```
 
-## Write workflow
-``` yaml
-name: Deploy static site
-
-on:
-  push:
-    branches: [main]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-```
-
-## View live page on GitHub
-> Go to GitHub repo > settings > pages > Your site is live at ...

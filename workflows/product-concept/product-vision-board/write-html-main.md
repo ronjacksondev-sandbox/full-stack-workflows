@@ -11,9 +11,9 @@
 <section role="region">
   <h2>Target group</h2>
   <ul>
-    <li>Individuals who want clarity without complexity</li>
-    <li>People who think in terms of both time and money</li>
-    <li>Users frustrated by juggling multiple tracking tools</li>
+    <li>Clarity without complexity</li>
+    <li>Time and money </li>
+    <li>Multi tracking tool users</li>
   </ul>
 </section>
 
@@ -28,20 +28,28 @@
 
 <section role="region">
   <h2>Product</h2>
-  <p>Duo Budget is a minimal personal planning tool</p>
-  <p>It uses shared categories to connect hours and dollars.</p>
-  <p>Users log entries, view totals, and see resources in one unified dashboard.</p>
+  <p>Simple budgeting tool</p>
+  <p>Shared categories connect hours and dollars</p>
+  <p>Users see one unified dashboard</p>
 </section>
 
 <section role="region">
-  <h2>Business goals</h2>
-  <ul>
-    <li>Validate demand for a unified time‑and‑money model</li>
-    <li>Grow a base of engaged early users</li>
-    <li>Introduce premium features that support long‑term sustainability</li>
-  </ul>
+  <h2>Business Goals</h2>
+  <dl>
+    <dt>Validation</dt>
+    <dd>Determine demand for time-and-money model</dd>
+
+    <dt>Growth</dt>
+    <dd>Find engaged early users</dd>
+
+    <dt>Upgrade</dt>
+    <dd>Introduce premium features</dd>
+  </dl>
 </section>
 ```
+
+## View page in browser
+
 
 ## Git Commit
 ``` bash

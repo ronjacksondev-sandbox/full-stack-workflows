@@ -1,4 +1,4 @@
-# Write HTML Head
+# Write HTML Boilerplate
 
 ## Create File
 ``` bash

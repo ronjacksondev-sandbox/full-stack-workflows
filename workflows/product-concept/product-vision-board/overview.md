@@ -4,7 +4,8 @@ The founder of Duo Budget has organized the major conceptual idea for a software
 
 Estimated Time: 30-60 minutes
 
-After reading the overview you can get started on the [first workflow step](setup-git.md).
+## Quick Start
+Go to [first step.](setup-git.md)
 
 ## Objective
 Take the founder's product vision outline and produce a static web page so the founder can easily share the vision with potential team members and investors.
@@ -22,14 +23,14 @@ View the [tech stack](tech-stack.md) page for a list of technical topcs covered.
 
 ### Dev Environment
 1. [Setup Git](setup-git.md)
-### Web Stack Steps
+### Web Stack
 1. [Write HTML Head](write-html-head.md)
 1. [Write HTML Body](write-html-body.md)
 1. [Write HTML Main](write-html-main.md)
 1. [Setup CSS Framework](setup-css-framework.md)
 1. [Write Styles](write-styles.md)
 1. [Write Dark Mode](write-dark-mode.md)
-### Infastructure Steps
+### Infastructure
 1. [Deploy Page](deploy-page.md)
 
 

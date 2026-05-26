@@ -1,6 +1,7 @@
 # Setup Git
 
 ## Create remote repository on GitHub
+- Repo Name: product-vision-board
 - Set visibility to public (so GitHub pages can be enabled)
 - Set 'No .gitignore'
 

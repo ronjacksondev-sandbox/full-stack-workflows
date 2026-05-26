@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duo Budget – MVP Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <h1>Duo Budget – <dfn><abbr title="Minimum Viable Product">MVP</abbr></dfn></h1>
+  </header>
+
+  <main>
+
+    <section aria-labelledby="section-problem">
+      <h2 id="section-problem">Problem</h2>
+      <p>People track <em>time</em> and <em>money</em> in separate tools, making it hard to see how their resources connect. Without a unified view, planning and decision‑making become guesswork.</p>
+    </section>
+
+    <section aria-labelledby="section-audience">
+      <h2 id="section-audience">Audience</h2>
+      <ul>
+        <li>People who want clarity without complexity</li>
+        <li>Planners who think in terms of both time and money</li>
+        <li>Users frustrated by juggling multiple tracking tools</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="section-value">
+      <h2 id="section-value">Value proposition</h2>
+      <p>Duo Budget unifies time and money through shared categories, giving users a simple, clear view of where their resources go.</p>
+    </section>
+
+    <section aria-labelledby="section-mvp-features">
+      <h2 id="section-mvp-features">MVP features</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Phase</th>
+            <th scope="col">Category</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Effort</th>
+            <th scope="col">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>User login capability</td>
+            <td>1</td>
+            <td>Infrastructure</td>
+            <td><strong>Must</strong></td>
+            <td>Medium</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Shared categories</td>
+            <td>1</td>
+            <td>Core concept</td>
+            <td><strong>Must</strong></td>
+            <td>Medium</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Log time entries</td>
+            <td>1</td>
+            <td>Tracking</td>
+            <td><strong>Must</strong></td>
+            <td>Medium</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Log money entries</td>
+            <td>1</td>
+            <td>Tracking</td>
+            <td><strong>Must</strong></td>
+            <td>Medium</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Category totals (time + money)</td>
+            <td>1</td>
+            <td>Insights</td>
+            <td><strong>Must</strong></td>
+            <td>Low</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Unified dashboard (basic totals)</td>
+            <td>1</td>
+            <td>Clarity</td>
+            <td><strong>Must</strong></td>
+            <td>Medium</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Yearly projections (basic)</td>
+            <td>2</td>
+            <td>Planning</td>
+            <td>Should</td>
+            <td>Medium</td>
+            <td>Premium</td>
+          </tr>
+          <tr>
+            <td>Monthly summary view</td>
+            <td>2</td>
+            <td>Insights</td>
+            <td>Should</td>
+            <td>Medium</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Export data (CSV)</td>
+            <td>3</td>
+            <td>Utility</td>
+            <td>Could</td>
+            <td>Low</td>
+            <td>Premium</td>
+          </tr>
+          <tr>
+            <td>Advanced projections (what-if scenarios)</td>
+            <td>3</td>
+            <td>Planning</td>
+            <td>Could</td>
+            <td>High</td>
+            <td>Premium</td>
+          </tr>
+          <tr>
+            <td>Insights / recommendations</td>
+            <td>3</td>
+            <td>Intelligence</td>
+            <td>Could</td>
+            <td>High</td>
+            <td>Premium</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section aria-labelledby="section-user-flow">
+      <h2 id="section-user-flow">Core user flow</h2>
+      <ol>
+        <li>User creates an account and signs in.</li>
+        <li>User reviews the shared category list to understand the <em>unified structure</em>.</li>
+        <li>User logs a time entry using one of the categories.</li>
+        <li>User logs a money entry using the <em>same</em> category.</li>
+        <li>User views category totals to see <strong>time and money combined</strong>.</li>
+        <li>User opens the dashboard to understand their <em>overall resource picture</em>.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="section-out-of-scope">
+      <h2 id="section-out-of-scope">Out of scope</h2>
+      <ul>
+        <li>Bank account syncing or automated financial imports</li>
+        <li>Calendar integrations or automated time tracking</li>
+        <li>AI‑driven forecasting beyond simple projections</li>
+        <li>Team or multi‑user collaboration features</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="section-success">
+      <h2 id="section-success">Success criteria</h2>
+      <dl>
+
+        <dt>User login capability</dt>
+        <dd>Users can create an account and return to saved data without assistance.</dd>
+
+        <dt>Shared categories</dt>
+        <dd>Users understand the category system without explanation.</dd>
+
+        <dt>Log time entries</dt>
+        <dd>Users can record a time entry within <em>30 seconds</em> of onboarding.</dd>
+
+        <dt>Log money entries</dt>
+        <dd>Users can record a money entry within <em>30 seconds</em> of onboarding.</dd>
+
+        <dt>Category totals</dt>
+        <dd>Users can identify at least one insight about their habits after first use.</dd>
+
+        <dt>Unified dashboard (basic totals)</dt>
+        <dd>Users understand the dashboard at a glance without guidance.</dd>
+
+        <dt>Yearly projections (basic)</dt>
+        <dd>Users can interpret projected totals without needing documentation.</dd>
+
+        <dt>Monthly summary view</dt>
+        <dd>Users can compare months and spot changes in under <em>10 seconds</em>.</dd>
+
+        <dt>Export data (CSV)</dt>
+        <dd>Users can export their data and open it successfully in another tool.</dd>
+
+        <dt>Advanced projections</dt>
+        <dd>Users can adjust variables and immediately see meaningful changes.</dd>
+
+        <dt>Insights / recommendations</dt>
+        <dd>Users receive at least one actionable suggestion that feels relevant.</dd>
+
+      </dl>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Duo Budget</p>
+  </footer>
+
+</body>
+</html>

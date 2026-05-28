@@ -44,5 +44,5 @@ git commit --allow-empty -m 'Initial commit'
 git push --set-upstream origin main
 ```
 
-Next: [Write HTML head](write-html-head.md)
+Next: [Write HTML head](write-html-boilerplate.md)
 

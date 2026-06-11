@@ -1,12 +1,12 @@
 # Write Data Structure
 
-### Add data file `recipe.js`
+## Add data file `recipe.js`
 ``` bash
 mkdir src/data
 touch src/data/recipe.js
 ```
 
-### Write data file `recipe.js`
+## Write data file `recipe.js`
 ``` js
 const recipe = {
   title: 'Cozy Blueberry Pie',

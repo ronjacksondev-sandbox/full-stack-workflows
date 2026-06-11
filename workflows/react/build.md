@@ -1,6 +1,6 @@
 # Build
 
-### Run vite Build
+## Run vite Build
 - build produced in /dist folder
 - bundles js into file(s) in assets folder
     - Your application code

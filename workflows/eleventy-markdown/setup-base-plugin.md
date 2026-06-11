@@ -5,23 +5,23 @@
 - We can alter the `<a>` links to use this subdirectory with the eleventy HTML Base plugin.
 
 
-### Import Html Base Plugin (add it to the other named import)
+## Import Html Base Plugin (add it to the other named import)
 ``` js
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 ```
 
-### Add plugin to `eleventy.config.js` to the default function
+## Add plugin to `eleventy.config.js` to the default function
 ``` js
 eleventyConfig.addPlugin (EleventyHtmlBasePlugin, {
   baseHref: "/<github-repo-name>/"
 });
 ```
-### Add pathPrefix property to the `config` object
+## Add pathPrefix property to the `config` object
 ``` js
 pathPrefix: "/<github-repo-name>/"
 ```
 
-### Test and see github repo name in url
+## Test and see github repo name in url
 ``` bash
 npm run serve
 ```
@@ -32,7 +32,7 @@ Expectations
 
 
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds base directory config'

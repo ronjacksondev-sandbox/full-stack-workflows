@@ -1,17 +1,17 @@
 # Setup deployment
 
-### Configure Github Actions (Go to GitHub.com)
+## Configure Github Actions (Go to GitHub.com)
 > Go to repository > Settings > Pages > Build and Deployment > Source = Github Actions
 
 
-### Create Github Actions workflow
+## Create Github Actions workflow
 ``` bash
 mkdir .github
 mkdir .github/workflows
 touch .github/workflows/deploy.yml
 ```
 
-### Write deployment yaml script
+## Write deployment yaml script
 ``` yaml
 name: Deploy Eleventy to GitHub Pages
 
@@ -60,12 +60,12 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-### Commit and Push
+## Commit and Push
 ``` bash
 git add .
 git commit -m 'Adds github pages config'
 git push
 ```
 
-### Add github pages link to about section and view site
+## Add github pages link to about section and view site
 > Github Repo > About sidebar > Settings > Website > Check - Use your Github Pages website

@@ -1,11 +1,11 @@
 # Add New Page
 
-### Create new page `basic-javascript.md`
+## Create new page `basic-javascript.md`
 ``` bash
 touch basic-javascript.md
 ```
 
-### Write `basic-javascript.md`
+## Write `basic-javascript.md`
 ```` markdown
 # Basic Javascript
 
@@ -25,13 +25,13 @@ const obj = {
 [Return to Homepage](index.md)
 ````
 
-### Add hyperlink to `index.md`
+## Add hyperlink to `index.md`
 ``` markdown
 Links  
 [Basic Javascript](basic-javascript.md)
 ```
 
-### Test Site
+## Test Site
 ``` bash
 npm run serve
 ```

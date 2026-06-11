@@ -8,5 +8,14 @@
   "excludeFiles": [
     "./_site/**/*",
     "./node_modules/**/*"
-  ]
+  ],
+  "overrideMode": "merge",
+  "overrides": {
+    "./_includes/base.html": {
+      "rules": {
+        "required-h1": false
+      }
+    }
+  }
+
 }

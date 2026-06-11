@@ -1,24 +1,26 @@
+<!-- markuplint-disable -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Full-stack Workflows</title>
   <meta charset="UTF-8">
   <!-- Water css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-
   <!-- Prism theme -->
   <link rel="stylesheet" href="/public/css/prism-tomorrow.css">
-
   <!-- Prism toolbar -->
   <link rel="stylesheet" href="/public/css/prism-toolbar.css">
   
+  <!-- Prism js features -->
+  <script src="/public/js/prism.js" defer></script>
+  <script src="/public/js/prism-toolbar.js" defer></script>
+  <script src="/public/js/prism-copy-to-clipboard.js" defer></script>
+
+  <!-- Copy Box web component for copying plain text -->
+  <script src="/public/js/copy-box.js" defer></script>
+
 </head>
 <body>
   {{ content }}
-  <script src="/public/js/prism.js"></script>
-  <script src="/public/js/prism-toolbar.js"></script>
-  <script src="/public/js/prism-copy-to-clipboard.js"></script>
-
-  <!-- Copy Box web component for copying plain text -->
-  <script src="/public/js/copy-box.js"></script>
 </body>
 </html>

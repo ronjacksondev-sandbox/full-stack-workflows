@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "lint:html": "markuplint \"**/*.{html,md}\""
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/ronjacksondev-sandbox/full-stack-workflows#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-directory-output": "^1.0.2"
+    "@11ty/eleventy-plugin-directory-output": "^1.0.2",
+    "@markuplint/markdown-parser": "^5.0.0-alpha.0",
+    "markuplint": "^4.18.3"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "parser": {
+    "\\.md$": "@markuplint/markdown-parser"
+  },
+  "excludeFiles": [
+    "./_site/**/*",
+    "./node_modules/**/*"
+  ]
+}

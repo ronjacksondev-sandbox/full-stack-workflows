@@ -1,6 +1,6 @@
 # Setup Folders
 
-### Create folders
+## Create folders
 ``` bash
 # Server Source code folder
 mkdir src

@@ -4,9 +4,10 @@
   "description": "A web development training collection of step-by-step instructions to produce a web application.",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "clean": "node -e \"fs.rmSync('_site', {recursive: true, force: true})\"",
+    "build": "npm run clean && eleventy",
     "serve": "eleventy --serve",
-    "lint:html": "markuplint \"**/*.{html,md}\""
+    "lint:html": "npm run build && markuplint \"_site/**/*.html\""
   },
   "repository": {
     "type": "git",

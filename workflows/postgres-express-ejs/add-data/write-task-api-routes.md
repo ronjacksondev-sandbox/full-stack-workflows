@@ -1,11 +1,11 @@
 # Write task api routes
 
-### Add `taskApi.js`
+## Add `taskApi.js`
 ``` bash
 touch src/routes/taskApi.js
 ```
 
-### Write `taskApi.js`
+## Write `taskApi.js`
 ``` js
 import { Router } from "express";
 
@@ -30,7 +30,7 @@ router.patch("/:id/complete", completeTaskController);
 export default router;
 ```
 
-### Mount in `app.js`
+## Mount in `app.js`
 ``` js
 import taskApiRouter from './routes/taskApi.js';
 ```
@@ -38,7 +38,7 @@ import taskApiRouter from './routes/taskApi.js';
 app.use('/api/tasks', requireAuth, taskApiRouter);
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task api routes'

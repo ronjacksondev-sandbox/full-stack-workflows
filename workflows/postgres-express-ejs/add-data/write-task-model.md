@@ -1,12 +1,12 @@
 # Write task model
 
-### Add `task.js` model file
+## Add `task.js` model file
 ``` bash
 touch src/models/task.js
 ```
 
 
-### Write `task.js` model
+## Write `task.js` model
 ``` js
 import pool from "../db/index.js";
 
@@ -82,7 +82,7 @@ export async function deleteTask(task_id) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task model'

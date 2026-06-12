@@ -1,11 +1,11 @@
 # Write tag controller
 
-### Add `tagController.js`
+## Add `tagController.js`
 ``` bash
 touch src/controllers/tagController.js
 ```
 
-### Write `tagController.js`
+## Write `tagController.js`
 ``` js
 import {
   createTag,
@@ -263,7 +263,7 @@ export async function getTaskTagsController(req, res) {
 
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds tag controller'

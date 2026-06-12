@@ -1,6 +1,6 @@
 # Write tag views
 
-### Add `new.ejs`
+## Add `new.ejs`
 ``` bash
 touch src/views/pages/tags/new.ejs
 ```
@@ -43,12 +43,12 @@ touch src/views/pages/tags/new.ejs
 ` %>
 ```
 
-### Add `new-tag.js`
+## Add `new-tag.js`
 ``` bash
 touch public/js/new-tag.js
 ```
 
-### Write `new-tag.js`
+## Write `new-tag.js`
 ``` js
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('new-tag-form');
@@ -93,12 +93,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-### Add `index.ejs`
+## Add `index.ejs`
 ``` bash
 touch src/views/pages/tags/index.ejs
 ```
 
-### Write `index.ejs`
+## Write `index.ejs`
 ``` js
 <div class="d-flex justify-content-between align-items-center mb-4">
   <h1 class="mb-0"><%= title %></h1>
@@ -131,12 +131,12 @@ touch src/views/pages/tags/index.ejs
 <% } %>
 ```
 
-### Add `show.ejs`
+## Add `show.ejs`
 ``` bash
 touch src/views/pages/tags/show.ejs
 ```
 
-### Write `show.ejs`
+## Write `show.ejs`
 ``` js
 <div class="row" data-tag-id="<%= tag.tag_id %>">
   <div class="col-md-8 col-lg-6">
@@ -174,12 +174,12 @@ touch src/views/pages/tags/show.ejs
 ` %>
 ```
 
-### Add `tag-show.js`
+## Add `tag-show.js`
 ``` bash
 touch public/js/tag-show.js
 ```
 
-### Write `tag-show.js`
+## Write `tag-show.js`
 ``` js
 document.addEventListener('DOMContentLoaded', () => {
   const tagId = document.querySelector('[data-tag-id]')?.getAttribute('data-tag-id');
@@ -267,12 +267,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-### Add `edit.ejs`
+## Add `edit.ejs`
 ``` bash
 touch src/views/pages/tags/edit.ejs
 ```
 
-### Write `edit.ejs`
+## Write `edit.ejs`
 ``` js
 <div class="row">
   <div class="col-md-8 col-lg-6">
@@ -310,12 +310,12 @@ touch src/views/pages/tags/edit.ejs
 ` %>
 ```
 
-### Add `edit-tag.js`
+## Add `edit-tag.js`
 ``` bash
 touch public/js/edit-tag.js
 ```
 
-### Write `edit-tag.js`
+## Write `edit-tag.js`
 ``` js
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('edit-tag-form');
@@ -360,9 +360,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-### Modify `taskViewController.js`
+## Modify `taskViewController.js`
 
-#### `tasksListPage()`
+### `tasksListPage()`
 ``` js
 import { findTasksByUserId, findTaskByTaskId } from "../models/task.js";
 import { findTagsByTaskId, findTagsByUserId } from "../models/tag.js";
@@ -377,7 +377,7 @@ import { findTagsByTaskId, findTagsByUserId } from "../models/tag.js";
   }
 ```
 
-#### `newTaskPage()`
+### `newTaskPage()`
 ```js
 export async function newTaskPage(req, res) {
   const userId = res.locals.currentUser?.user_id;
@@ -391,7 +391,7 @@ export async function newTaskPage(req, res) {
 }
 ```
 
-#### `editTaskPage()`
+### `editTaskPage()`
 ``` js
 export async function editTaskPage(req, res) {
   const { id } = req.params;
@@ -420,13 +420,13 @@ export async function editTaskPage(req, res) {
 }
 ```
 
-### Add `<div>` for tags to `tasks/show.ejs`
+## Add `<div>` for tags to `tasks/show.ejs`
 - Add on line 20 below `<h1>`
 ``` js
 <div id="task-tags" class="mb-3"></div>
 ```
 
-### Modify `task-show.js`
+## Modify `task-show.js`
 ``` js
 const tagsEl = document.getElementById("task-tags");
 ```
@@ -465,12 +465,12 @@ loadTags(taskId);
   }
 ```
 
-### Add `tagBadges.ejs`
+## Add `tagBadges.ejs`
 ``` bash
 touch src/views/partials/tags/tagBadges.ejs`
 ```
 
-### Write `tagBadges.ejs`
+## Write `tagBadges.ejs`
 ``` js
 <%
   // Expects: tags (array of tag objects with tag_id and name)
@@ -493,7 +493,7 @@ touch src/views/partials/tags/tagBadges.ejs`
 <% } %>
 ```
 
-### Add `tagBadges.ejs` partial to `tasks/index.ejs`
+## Add `tagBadges.ejs` partial to `tasks/index.ejs`
 - Add on line 19 after `</a>`
 ``` js
 <%- include("../../partials/tags/tagBadges", { tags: task.tags || [], taskId: task.task_id }) %>

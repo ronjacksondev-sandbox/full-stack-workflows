@@ -1,12 +1,12 @@
 # Write Auth Views
 
 
-### Add `signup.ejs`
+## Add `signup.ejs`
 ``` bash
 touch src/views/pages/signup.ejs
 ```
 
-### Write `signup.ejs`
+## Write `signup.ejs`
 ``` html
 <h1>Sign up</h1>
 <form action="/auth/signup" method="post">
@@ -30,12 +30,12 @@ touch src/views/pages/signup.ejs
 ```
 
 
-### Add `login.ejs`
+## Add `login.ejs`
 ``` bash
 touch src/views/pages/login.ejs
 ```
 
-### Write `login.ejs`
+## Write `login.ejs`
 ``` html
 <h1>Login</h1>
 <form action="/auth/login" method="post">
@@ -54,7 +54,7 @@ touch src/views/pages/login.ejs
 </form>
 ```
 
-### Add auth to nav bar in `header.ejs`
+## Add auth to nav bar in `header.ejs`
 ``` html
 <nav class="navbar-nav ms-auto">
   <% if (currentUser) { %>
@@ -65,7 +65,7 @@ touch src/views/pages/login.ejs
   <% } %>
 </nav>
 ```
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds auth views'

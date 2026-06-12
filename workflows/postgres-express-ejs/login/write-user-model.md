@@ -1,11 +1,11 @@
 # Write user model
 
-### Create user model file
+## Create user model file
 ``` bash
 touch src/models/user.js
 ```
 
-### Write user model file
+## Write user model file
 ``` js
 import pool from '../db/index.js';
 
@@ -50,7 +50,7 @@ export async function findUserByEmailWithPassword(email) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds user model'

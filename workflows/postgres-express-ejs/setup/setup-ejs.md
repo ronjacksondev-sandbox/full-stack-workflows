@@ -1,12 +1,12 @@
 # Setup EJS
 
-### Install EJS
+## Install EJS
 ``` bash
 npm install ejs
 npm install express-ejs-layouts
 ```
 
-### Add EJS as view engine in `app.js`
+## Add EJS as view engine in `app.js`
 ``` js
 import expressLayouts from 'express-ejs-layouts';
 ```
@@ -17,12 +17,12 @@ app.set('view engine', 'ejs');
 app.use(expressLayouts);
 ```
 
-### Create the header partial
+## Create the header partial
 ``` bash
 touch src/views/partials/header.ejs
 ```
 
-### Write the header partial
+## Write the header partial
 ``` html
 <header class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -35,23 +35,23 @@ touch src/views/partials/header.ejs
 </header>
 ```
 
-### Create the home page
+## Create the home page
 ``` bash
 touch src/views/pages/index.ejs
 ```
 
-### Write the home page content
+## Write the home page content
 ``` html
 <h1>Do Date</h1>
 <p>Manage your tasks and do them on time!</p>
 ```
 
-### Add bootsrap
+## Add bootsrap
 ``` bash
 npm install bootsrap
 ```
 
-### Copy bootstrap files
+## Copy bootstrap files
 ``` bash
 mkdir -p public/css public/js && \
 cp node_modules/bootstrap/dist/css/bootstrap.min.css public/css/ && \
@@ -61,13 +61,13 @@ cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map public/js/
 ```
 
 
-### Create the layout file
+## Create the layout file
 - convention is to create a file called layout.ejs in the views root
 ``` bash
 touch src/views/layout.ejs
 ```
 
-### Write the layout file
+## Write the layout file
 - body is the name express-ejs-layouts uses to inject the view page into the layout
 ``` html
 <!DOCTYPE html>
@@ -88,12 +88,12 @@ touch src/views/layout.ejs
   </body>
 </html>
 ```
-### Create the index controller
+## Create the index controller
 ``` bash
 touch src/controllers/index.js
 ```
 
-### Write the controller
+## Write the controller
 ``` js
 const getIndex = (req, res) => {
   res.render("pages/index", {title: "home"});
@@ -104,12 +104,12 @@ export default {
 };
 ```
 
-### Create the index route
+## Create the index route
 ``` bash
 touch src/routes/index.js
 ```
 
-### Write the index route
+## Write the index route
 ``` js
 import express from 'express';
 import indexController from '../controllers/index.js';
@@ -121,7 +121,7 @@ indexRouter.get('/', indexController.getIndex);
 export default indexRouter;
 ```
 
-### Mount the router in `app.js`
+## Mount the router in `app.js`
 ``` js
 import indexRouter from './routes/index.js';
 ```
@@ -130,13 +130,13 @@ import indexRouter from './routes/index.js';
 app.use('/', indexRouter);
 ```
 
-### Test
+## Test
 - Home page should load at this point
 ``` bash
 npm run dev
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds view setup'

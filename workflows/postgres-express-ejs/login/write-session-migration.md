@@ -1,11 +1,11 @@
 # Write session migration
 
-### Initialize migration file
+## Initialize migration file
 ``` bash
 npm run migrate create session-table
 ```
 
-### Write UP migration implementation
+## Write UP migration implementation
 ``` js
 // Create session table
 pgm.createTable('session', {
@@ -29,13 +29,13 @@ pgm.createIndex('session', 'expire');
 
 ```
 
-### Write DOWN Migration implementation
+## Write DOWN Migration implementation
 ``` js
 pgm.dropTable('session');
 ```
 
 
-### Run the migration
+## Run the migration
 ``` bash
 npm run migrate up
 ```

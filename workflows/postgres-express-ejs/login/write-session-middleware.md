@@ -1,30 +1,30 @@
 # Write session middleware
 
-### Install session middleware and session store
+## Install session middleware and session store
 
 ``` bash
 npm install express-session
 npm install connect-pg-simple
 ```
 
-### Create env value for session secret to sign session cookie
+## Create env value for session secret to sign session cookie
 ``` bash
 echo "SESSION_SECRET=$(openssl rand -hex 64)" >> .env
 ```
 
-### Set environment value in env
+## Set environment value in env
 ``` bash
 echo 'NODE_ENV=development' >> .env
 ```
 
 
-### Create middleware file
+## Create middleware file
 ``` bash
 touch src/middleware/session.js
 ```
 
 
-### Write session middleware
+## Write session middleware
 ``` js
 import expressSession from 'express-session';
 import connectPgSimple from 'connect-pg-simple';
@@ -52,7 +52,7 @@ export default sessionMiddleware;
 ```
 
 
-### Mount middleware in `app.js`
+## Mount middleware in `app.js`
 ``` js
 import sessionMiddleware from './middleware/session.js';
 ```
@@ -61,12 +61,12 @@ import sessionMiddleware from './middleware/session.js';
 app.use(sessionMiddleware);
 ```
 
-### Add `setCurrentUser.js` middleware
+## Add `setCurrentUser.js` middleware
 ``` bash
 touch src/middleware/setCurrentUser.js
 ```
 
-### Write `setCurrentUser.js`
+## Write `setCurrentUser.js`
 ``` js
 import { findUserById } from '../models/user.js';
 
@@ -98,7 +98,7 @@ export async function setCurrentUser(req, res, next) {
 };
 ```
 
-### Mount `setCurrentUser.js` in `app.js`
+## Mount `setCurrentUser.js` in `app.js`
 ``` js
 import setCurrentUser from './middleware/setCurrentUser.js';
 ```
@@ -107,7 +107,7 @@ import setCurrentUser from './middleware/setCurrentUser.js';
 app.use(setCurrentUser);
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds session middleware'

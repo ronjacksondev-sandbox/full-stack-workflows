@@ -1,11 +1,11 @@
 # Write auth routes
 
-### Create authRoutes files
+## Create authRoutes files
 ``` bash
 touch src/routes/authRoutes.js
 ```
 
-### Write authRoutes
+## Write authRoutes
 ``` js
 import express from 'express';
 import { getSignupPage, getLoginPage, signup, login, logout } from '../controllers/authController.js';
@@ -22,7 +22,7 @@ export default authRouter;
 
 ```
 
-### Mount authRoutes in `app.js`
+## Mount authRoutes in `app.js`
 ``` js
 import authRouter from './routes/auth.js';
 ```
@@ -30,7 +30,7 @@ import authRouter from './routes/auth.js';
 app.use('/auth', authRouter);
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds auth routes'

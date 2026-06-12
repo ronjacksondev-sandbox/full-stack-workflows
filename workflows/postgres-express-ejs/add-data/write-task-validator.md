@@ -1,11 +1,11 @@
 # Write task validator
 
-### Add `taskValidators.js`
+## Add `taskValidators.js`
 ``` bash
 touch src/validators/taskValidators.js
 ```
 
-### Write `taskValidators.js`
+## Write `taskValidators.js`
 ``` js
 export function validateCreateTask({title, due_date, completed}) {
   const errors = [];
@@ -77,7 +77,7 @@ export function validateCompleteTask({completed}) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task validators'

@@ -1,11 +1,11 @@
 # Write tag routes
 
-### Add `tag.js`
+## Add `tag.js`
 ``` bash
 touch src/routes/tag.js
 ```
 
-### Write `tag.js`
+## Write `tag.js`
 ``` js
 import { Router } from "express";
 
@@ -43,7 +43,7 @@ router.get("/tasks/:taskId/tags", getTaskTagsController);
 export default router;
 ```
 
-### Mount `tags.js` in `app.js`
+## Mount `tags.js` in `app.js`
 ``` js
 import tagRouter from './routes/tag.js';
 ```
@@ -51,7 +51,7 @@ import tagRouter from './routes/tag.js';
 app.use('/tags', requireAuth, tagRouter);
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds tag routes`

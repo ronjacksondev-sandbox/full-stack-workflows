@@ -1,11 +1,11 @@
 # Write user migration
 
-### Initialize migration file
+## Initialize migration file
 ``` bash
 npm run migrate create add-user-table
 ```
 
-### Write UP migration implementation
+## Write UP migration implementation
 ``` js
 pgm.createTable('users', {
   user_id: {
@@ -33,20 +33,20 @@ pgm.createTable('users', {
 });
 ```
 
-### Write DOWN Migration implementation
+## Write DOWN Migration implementation
 ``` js
 pgm.dropTable('users');
 ```
 
 
-### Run the migration
+## Run the migration
 - node-pg-migrate keeps a table of migrations and track which need to run
 - node-pg-migrate will use the db string in the .env file to connect to db
 ``` bash
 npm run migrate up
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds session and user migrations'

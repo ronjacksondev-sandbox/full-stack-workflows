@@ -1,12 +1,12 @@
 # Write tag model
 
-### Add `tag.js` model file
+## Add `tag.js` model file
 ``` bash
 touch src/models/tag.js
 ```
 
 
-### Write `tag.js` model
+## Write `tag.js` model
 ``` js
 import pool from "../db/index.js";
 
@@ -104,7 +104,7 @@ export async function removeTagFromTask(task_id, tag_id) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds tag model'

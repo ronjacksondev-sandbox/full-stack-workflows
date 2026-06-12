@@ -1,11 +1,11 @@
 # Write tag validators
 
-### Add `tagValidators.js`
+## Add `tagValidators.js`
 ``` bash
 touch src/validators/tagValidators.js
 ```
 
-### Wrote `tagValidators.js`
+## Wrote `tagValidators.js`
 ``` js
 export function validateCreateTag({name}) {
   const errors = [];
@@ -90,7 +90,7 @@ export function validateRemoveTagFromTask({task_id, tag_id}) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds tag validators'

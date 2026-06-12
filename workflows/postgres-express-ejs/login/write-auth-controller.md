@@ -1,11 +1,11 @@
 # Write auth controller
 
-### Create file
+## Create file
 ``` bash
 touch src/controllers/authController.js
 ```
 
-### Write auth controller
+## Write auth controller
 ``` js
 import { validateSignupInput, validateLoginInput } from '../validators/authValidators.js';
 import { registerUser, authenticateUser } from '../services/authService.js';
@@ -68,7 +68,7 @@ export function logout(req, res, next) {
 
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds auth controller'

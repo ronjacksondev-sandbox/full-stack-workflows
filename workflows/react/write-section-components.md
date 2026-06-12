@@ -20,7 +20,7 @@ export default function RecipeHeader({
       {tagline && <p>{tagline}</p>}
       <div>
         <small>
-          Serves {servings} · Prep {prepTime} · Bake {cookTime}
+          Serves {servings} | Prep {prepTime} | Bake {cookTime}
         </small>
       </div>
     </header>

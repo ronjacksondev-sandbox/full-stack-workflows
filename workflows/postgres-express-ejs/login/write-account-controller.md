@@ -1,11 +1,11 @@
 # Write account controller
 
-### Add `accountController.js`
+## Add `accountController.js`
 ``` bash
 touch src/controllers/accountController.js
 ```
 
-### Write `accountController.js`
+## Write `accountController.js`
 ``` js
 import { findUserById } from '../models/user.js';
 
@@ -30,7 +30,7 @@ export async function getAccountPage(req, res, next) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds account controller'

@@ -1,17 +1,17 @@
 # Write Auth Service
 
-### Install bcrypt
+## Install bcrypt
 ``` bash
 npm install bcrypt
 ```
 
 
-### Add `authService.js`
+## Add `authService.js`
 ``` bash
 touch src/services/authService.js
 ```
 
-### Write `authService.js`
+## Write `authService.js`
 ``` js
 import bcrypt from 'bcrypt';
 import * as users from '../models/user.js';
@@ -55,7 +55,7 @@ export async function authenticateUser({ email, password }) {
 
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds auth service'

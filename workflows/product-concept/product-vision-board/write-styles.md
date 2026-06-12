@@ -2,13 +2,13 @@
 
 Integrate orange and green into the page design
 
-# Add `hr` elements below the `main title`
+## Add `hr` elements below the `main title`
 ```
 <hr class="top-hr"/>
 <hr class="bottom-hr"/>
 ```
 
-# Add `hr` styles to the `head` element
+## Add `hr` styles to the `head` element
 - Styles are normally written in their own css file instead of the html file.
 - They are added to the html file here simply to show the basic concept.
 

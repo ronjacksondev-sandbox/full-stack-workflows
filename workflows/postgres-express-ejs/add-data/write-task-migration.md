@@ -1,11 +1,11 @@
 # Write task migration
 
-### Initialize migration file
+## Initialize migration file
 ``` bash
 npm run migrate create task-table
 ```
 
-### Write up migration 
+## Write up migration 
 ``` js
 pgm.createTable('tasks', {
   task_id: {
@@ -34,17 +34,17 @@ pgm.createTable('tasks', {
 
 ```
 
-### Write down migration
+## Write down migration
 ``` js
 pgm.dropTable('tasks');
 ```
 
-### Run migration
+## Run migration
 ``` bash
 npm run migrate up
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds tasks table'

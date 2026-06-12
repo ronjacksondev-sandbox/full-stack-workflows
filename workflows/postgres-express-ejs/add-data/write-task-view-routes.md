@@ -1,11 +1,11 @@
 # Write task view routes
 
-### Add `taskView.js`
+## Add `taskView.js`
 ``` bash
 touch src/routes/taskView.js
 ```
 
-### Write `taskView.js`
+## Write `taskView.js`
 ``` js
 import { Router } from "express";
 
@@ -27,7 +27,7 @@ export default router;
 ```
 
 
-### Mount task view router in `app.js`
+## Mount task view router in `app.js`
 ``` js
 import taskViewRouter from './routes/taskViews.js'
 ```
@@ -35,7 +35,7 @@ import taskViewRouter from './routes/taskViews.js'
 app.use('/tasks', requireAuth, taskViewRouter);
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task view routes'

@@ -1,11 +1,11 @@
 # Write tag migration
 
-### Initialize migration file
+## Initialize migration file
 ``` bash
 npm run migrate create tag-table
 ```
 
-### Write up migration
+## Write up migration
 ``` js
 pgm.createTable('tags', {
   tag_id: {
@@ -42,18 +42,18 @@ pgm.createTable('task_tags', {
 pgm.addConstraint('task_tags', 'task_tags_pkey', { primaryKey: ['task_id', 'tag_id'] });
 ```
 
-### Write down migration
+## Write down migration
 ``` js
 pgm.dropTable('task_tags');
 pgm.dropTable('tags');
 ```
 
-### Run migration
+## Run migration
 ``` bash
 npm run migrate up
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds tag migration'

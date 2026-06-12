@@ -1,11 +1,11 @@
 # Add task api controller
 
-### Add `tasksApiController.js` file
+## Add `tasksApiController.js` file
 ``` bash
 touch src/controllers/tasksApiController.js
 ```
 
-### Write `tasksApiController.js`
+## Write `tasksApiController.js`
 ``` js
 import {
   createTask,
@@ -116,7 +116,7 @@ export async function completeTaskController(req, res) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task api controller'

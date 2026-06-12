@@ -1,11 +1,11 @@
 # Write Auth Validator
 
-### Add `authValidators.js`
+## Add `authValidators.js`
 ```bash
 touch src/validators/authValidators.js
 ```
 
-### Write `authValidators.js`
+## Write `authValidators.js`
 ``` js
 export function validateSignupInput({ name, email, password }) {
   if (!name || !email || !password) {
@@ -35,7 +35,7 @@ export function validateLoginInput({ email, password }) {
 
 ```
 
-### Commit 
+## Commit 
 ``` bash
 git add .
 git commit -m 'Adds auth validator

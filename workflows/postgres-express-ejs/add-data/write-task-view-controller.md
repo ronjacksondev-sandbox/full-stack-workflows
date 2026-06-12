@@ -1,11 +1,11 @@
 # Write task view controller
 
-### Add `taskViewController.js`
+## Add `taskViewController.js`
 ``` bash
 touch src/controllers/taskViewController.js
 ```
 
-### Write `taskViewController.js`
+## Write `taskViewController.js`
 ``` js
 import { findTasksByUserId } from "../models/task.js";
 
@@ -47,7 +47,7 @@ export function editTaskPage(req, res) {
 }
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task view controller'

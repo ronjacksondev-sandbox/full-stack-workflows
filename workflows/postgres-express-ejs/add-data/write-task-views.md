@@ -1,11 +1,11 @@
 # Write task views
 
-### Add `new.ejs`
+## Add `new.ejs`
 ``` bash
 touch src/views/pages/tasks/new.ejs
 ```
 
-### Write `new.ejs`
+## Write `new.ejs`
 ``` html
 <div class="row">
   <div class="col-md-8 col-lg-6">
@@ -60,12 +60,12 @@ touch src/views/pages/tasks/new.ejs
 ` %>
 ```
 
-### Add `new-task.js`
+## Add `new-task.js`
 ``` bash
 touch public/js/new-task.js
 ```
 
-### Write `new-task.js`
+## Write `new-task.js`
 ``` js
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("new-task-form");
@@ -122,12 +122,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ```
 
-### Add `index.ejs`
+## Add `index.ejs`
 ``` bash
 touch src/views/pages/tasks/index.ejs
 ```
 
-### Write `index.ejs`
+## Write `index.ejs`
 ``` html
 <div class="d-flex justify-content-between align-items-center mb-4">
   <h1 class="mb-0"><%= title %></h1>
@@ -163,12 +163,12 @@ touch src/views/pages/tasks/index.ejs
 
 ```
 
-### Add `show.ejs`
+## Add `show.ejs`
 ``` bash
 touch src/views/pages/tasks/show.ejs
 ```
 
-### Write `show.ejs`
+## Write `show.ejs`
 ``` html
 <div class="row" data-task-id="<%= taskId %>">
   <div class="col-md-8 col-lg-6">
@@ -209,12 +209,12 @@ touch src/views/pages/tasks/show.ejs
 
 ```
 
-### Add `task-show.js`
+## Add `task-show.js`
 ``` bash
 touch public/js/task-show.js
 ```
 
-### Write `task-show.js`
+## Write `task-show.js`
 ``` js
 document.addEventListener("DOMContentLoaded", async () => {
   const taskId = document.querySelector("[data-task-id]")?.getAttribute("data-task-id");
@@ -299,12 +299,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 ```
 
-### Add `edit.ejs`
+## Add `edit.ejs`
 ``` bash
 touch src/views/pages/tasks/edit.ejs
 ```
 
-### Write `edit.ejs`
+## Write `edit.ejs`
 ``` html
 <div class="row">
   <div class="col-md-8 col-lg-6">
@@ -374,12 +374,12 @@ touch src/views/pages/tasks/edit.ejs
 
 ```
 
-### Add `task-edit.js`
+## Add `task-edit.js`
 ```bash
 touch public/js/task-edit.js
 ```
 
-### Write `task-edit.js`
+## Write `task-edit.js`
 ``` js
 document.addEventListener("DOMContentLoaded", async () => {
   const form = document.getElementById("edit-task-form");
@@ -466,7 +466,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 ```
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds task views'

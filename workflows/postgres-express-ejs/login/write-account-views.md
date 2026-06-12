@@ -1,11 +1,11 @@
 # Write account views
 
-### Add `account.ejs`
+## Add `account.ejs`
 ``` bash
 touch src/views/pages/account.ejs
 ```
 
-### Write `account.ejs`
+## Write `account.ejs`
 ``` html
 <h1>Account profile</h1>
 
@@ -19,7 +19,7 @@ touch src/views/pages/account.ejs
 </div>
 ```
 
-### Test
+## Test
 ``` bash
 npm run dev
 ```
@@ -27,7 +27,7 @@ npm run dev
 - Login page should be able to login user
 - Account page should be able to show logged in user details
 
-### Commit
+## Commit
 ``` bash
 git add .
 git commit -m 'Adds account views'

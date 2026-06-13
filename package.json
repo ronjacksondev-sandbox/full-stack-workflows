@@ -25,7 +25,8 @@
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-directory-output": "^1.0.2",
     "@markuplint/markdown-parser": "^5.0.0-alpha.0",
-    "markuplint": "^4.18.3"
+    "markuplint": "^4.18.3",
+    "prettier": "3.8.4"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",

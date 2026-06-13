@@ -2,9 +2,12 @@
   "extends": [
     "markuplint:recommended"
   ],
-  "excludeFiles": [
-    "./_includes/**/*",
-    "./public/**/*",
-    "./workflows/**/*"
-  ]
+  "overrideMode": "merge",
+  "overrides": {
+    "./_includes/base.html": {
+      "rules": {
+        "required-h1": false
+      }
+    }
+  }
 }

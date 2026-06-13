@@ -44,5 +44,6 @@ git commit --allow-empty -m 'Initial commit'
 git push --set-upstream origin main
 ```
 
-Next: [Write HTML boilerplate](write-html-boilerplate.md)
+Next:  
+[Setup Node](setup-node.md)
 

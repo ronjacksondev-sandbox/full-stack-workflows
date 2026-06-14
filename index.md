@@ -2,11 +2,11 @@
 
 These workflows are sets of small web tutorial projects that you can build and deploy to develop full-stack muscle memory.
 
-Target OS: Windows
+Target OS: Windows  
 Target Environment: Node
 
-## Course Outline
-View the list of projects on the [course outline page](course-outline.md).  
+## Get Started
+[Course Outline](course-outline.md)
 
 ## Basics of a workflow
 - Read the tutorial steps.
@@ -26,8 +26,6 @@ View the list of projects on the [course outline page](course-outline.md).
 - Iterate the full stack.
 - Introduce concepts progressively.
 - Keep projects somewhat minimal.
-- Observe a product lifecycle
+- Observe a software product lifecycle
 
-## Ready to get started?
-Go to the [course outline page](course-outline.md) and click on the first project.
 

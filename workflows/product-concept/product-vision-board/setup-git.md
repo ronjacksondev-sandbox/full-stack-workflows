@@ -44,6 +44,11 @@ git commit --allow-empty -m 'Initial commit'
 git push --set-upstream origin main
 ```
 
+## Setup gitignore
+``` bash
+npx gitignore node
+```
+
 Next:  
 [Setup Node](setup-node.md)
 

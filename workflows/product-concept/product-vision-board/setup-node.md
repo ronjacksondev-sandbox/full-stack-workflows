@@ -24,6 +24,7 @@ npm pkg set scripts.start="http-server . -a localhost -c-1"
 ``` bash
 git add .
 git commit -m 'Adds node infrastructure'
+```
 
 Next:  
 [Write HTML boilerplate](write-html-boilerplate.md)

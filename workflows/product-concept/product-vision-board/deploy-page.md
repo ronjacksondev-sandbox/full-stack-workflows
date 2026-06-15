@@ -28,7 +28,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download W3C validator
+        run: |
+          mkdir vnu
+          curl -L https://github.com/validator/validator/releases/latest/download/vnu.jar -o vnu/vnu.jar
+
+      - name: Run W3C validation
+        run: |
+          java -jar vnu/vnu.jar --errors-only *.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

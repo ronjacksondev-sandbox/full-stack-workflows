@@ -1,59 +1,39 @@
 # Course Outline
+This course is organized by a Product Lifecycle Management view.
 
-These project workflows walkthrough the product lifecycle of a theoretical budgeting app called Duo Budget.  
-
-Duo Budget is an idea for a web app that helps you budget time and money.
-
-Note: This a coding tutorial and the business concepts are theoretical and not recommended for actual production.
 
 ## Product Concept  
-### Tech Stack: `Static Web Site`
-### Projects
+
 1. [Product Vision Board](workflows/product-concept/product-vision-board/overview.md)
-1. Competition Matrix
+1. [Idea Validation Plan](workflows/product-concept/idea-validation-plan/overview.md)
+1. [Landing page](workflows/static-landing-page/overview.md)
+1. Landing page metrics
 1. Survey
+1. Interview notes
+1. Competition Matrix
 1. Business Model Canvas
+1. Go/No Go Recommendation
 1. Inception Deck
 1. Initial Roadmap
+1. Concept Brief
+1. Early press kit
+1. [Eleventy Markdown](workflows/eleventy-markdown/overview.md)
+
 
 ## Product Discovery  
-### Tech Stack: `Client-Side Rendered Site`
-### Projects
 1. Product Brief
 1. Personas
 1. User Journey Maps
+1. [React](workflows/react/overview.md)
+
 
 ## Product Design  
-### Tech Stack: `Dynamic Web Application`
-### Projects
 1. Test
 
 
 ## Product Development  
-### Tech Stack: `Database-Driven Application`
-### Projects
 1. Test
+1. [Postgres Express EJS](workflows/postgres-express-ejs/overview.md)
 
 
 
-
-
-
-
-## Static Backend
-
-1. 
-
-### Static HTML
-- [Landing page](workflows/static-landing-page/overview.md)
-
-### Static Site Generator
-- [Eleventy Markdown](workflows/eleventy-markdown/overview.md)
-
-### Client Side Render
-
-#### React
-- [React](workflows/react/overview.md)
-
-## Dynamic Backend
-- [Postgres Express EJS](workflows/postgres-express-ejs/overview.md)

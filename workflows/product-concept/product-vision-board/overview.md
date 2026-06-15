@@ -2,6 +2,9 @@
 
 The founder of Duo Budget has organized the major conceptual idea for a software application into a Product Vision Board.  
 
+## Objective
+Take the founder's product vision outline and produce a static web page so the founder can easily share the vision with potential team members and investors.
+
 Estimated Time: 30-60 minutes
 
 ## Workflow Steps
@@ -15,8 +18,6 @@ Estimated Time: 30-60 minutes
 1. [Write Dark Mode](write-dark-mode.md)
 1. [Deploy Page](deploy-page.md)
 
-## Objective
-Take the founder's product vision outline and produce a static web page so the founder can easily share the vision with potential team members and investors.
 
 ## Requirements
 - Valid semantic HTML document

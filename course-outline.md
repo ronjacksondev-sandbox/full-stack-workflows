@@ -4,8 +4,8 @@ This course is organized by a Product Lifecycle Management view.
 
 ## Product Concept  
 
-1. [Product Vision Board](workflows/product-concept/product-vision-board/overview.md)
-1. [Idea Validation Plan](workflows/product-concept/idea-validation-plan/overview.md)
+1. [Product Vision Board](workflows/product-concept/product-vision-board/overview.md)  (Basic HTML/CSS/JS)
+1. [Idea Validation Plan](workflows/product-concept/idea-validation-plan/overview.md) (Micro CSS Framework)
 1. [Landing page](workflows/static-landing-page/overview.md)
 1. Landing page metrics
 1. Survey

@@ -1,8 +1,13 @@
 # Course Outline
-This course is organized by a Product Lifecycle Management view.
+This course is organized by the Product Lifecycle Management of a theoretical app called Duo Budget.  
+The Duo Budget app is designed to help you track your time and your money.  
+The projects only build a partial section of each document to keep it brief.  
+The business decisions in this course are theoretical and not recommended.
 
 
 ## Product Concept  
+
+**(Static Web Sites)**
 
 1. [Product Vision Board](workflows/product-concept/product-vision-board/overview.md)  (Basic HTML/CSS/JS)
 1. [Idea Validation Plan](workflows/product-concept/idea-validation-plan/overview.md) (Micro CSS Framework)
@@ -21,6 +26,9 @@ This course is organized by a Product Lifecycle Management view.
 
 
 ## Product Discovery  
+
+**(Client-side Rendered Sites)**
+
 1. Product Brief
 1. Personas
 1. User Journey Maps
@@ -28,10 +36,16 @@ This course is organized by a Product Lifecycle Management view.
 
 
 ## Product Design  
+
+**(Dynamic Web Applications)**
+
 1. Test
 
 
 ## Product Development  
+
+**(Database-driven Applications)**
+
 1. Test
 1. [Postgres Express EJS](workflows/postgres-express-ejs/overview.md)
 

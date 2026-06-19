@@ -1,6 +1,6 @@
 # Product Vision Board - Overview
 
-The founder of Duo Budget has organized the major conceptual idea Duo Budget into  a Product Vision Board that needs to be shared with potential team members and investors.  
+The founder of Duo Budget has organized the major conceptual idea Duo Budget into a Product Vision Board that needs to be shared with potential team members and investors.  
 
 **Goal:** Post the product vision board online.
 

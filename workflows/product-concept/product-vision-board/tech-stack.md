@@ -2,32 +2,32 @@
 
 ## Dev Environment
 
-### Bash
-- General purpose command line
+**Shell:** Bash  
+**Version Control:** Git & GitHub  
+**Unit Tests:** Node:Test, JSDOM  
+**Editor:** VS Code
 
-### Git & GitHub
-- Version Control hosted on GitHub
+## Frontend
 
-### VS Code
+**HTML:**
+- Semantic Outline: `header` | `main` | `footer`
+- Headings: `h1` | `h2`
+- Inline Text Semantics: `em`
+- Navigation: `a`
+- Input control: `button`
 
-## Web Stack
-### HTML
-- Document Structure & Metadata
-- Section & Page Layout
-- Headings
-- Inline Text Semantics
-- Navigation Link
-- Input control
-
-### CSS
-- Classless CSS framework with dark and light options
+**CSS:**
+- Classless CSS framework: `water.css`
+- Dark and and light stylesheets
 - CSS Color rules
 
-### JS
+**JS:**
 - DOM manipulation
+
+## Backend
+**Server:** Static file server
 
 ## Infrastructure
 
-### GitHub Pages
-- Setup hosting and deploy to GitHub Pages
-
+**Site Hosting:** GitHub Pages  
+**Deployment:** GitHub Actions

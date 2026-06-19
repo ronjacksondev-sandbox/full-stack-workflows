@@ -1,13 +1,15 @@
 # Objective
 
-Post the Idea Validation Plan online.
+- Create an HTML page with multi-column design
+- Apply simple typography styles
+- Add font size adjustment feature
+- Verify mobile responsiveness
 
-Estimated Time: 30-60 minutes
 
-## Requirements
-- Git branching
+## Technical Requirements
+- Use Git branching
 - Multi-column page layout
-- Basic aesthetic styling
+- Apply `milligram.css` framework
 - Integrate potential branding colors (orange and green)
 - Font adjustment controls
 - Hosted on Cloudflare pages

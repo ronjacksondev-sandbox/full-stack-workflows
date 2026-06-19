@@ -1,10 +1,11 @@
 # Idea Validation Plan - Overview
 
-The team needs to decide if  the Duo Budget vision has the potential to be profitable or unprofitable.  
+The team needs to decide if  the Duo Budget vision has the potential to be profitable or unprofitable. They put together an Idea Validation Plan and they need to share it with the rest of the team so they can stay on the same page while doing the research.
 
-Should they do it or not?  
+**Goal:** Post the plan online.  
 
-They put together an Idea Validation Plan and need to post it online so the team can stay on the same page while they do the business research.  
+Estimated Time: 30-60 minutes
+
 
 ## Workflow Steps
 

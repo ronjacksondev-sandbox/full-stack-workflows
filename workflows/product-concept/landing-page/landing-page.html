@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
   </head>
   <body>
-    <header>
+    <header class="container hero">
       <h1>Duo Budget</h1>
       <p>A clear view of your time and money in one place.</p>
     </header>
 
-    <main>
+    <main class="container">
       <section>
         <h2>Time is Money</h2>
         <p>
@@ -59,39 +59,66 @@
       </section>
 
       <section>
-        <h2 id="section-approach">A simple, incremental approach</h2>
-        <p>
-          Duo Budget is growing step by step, starting with the essentials and
-          expanding as the vision evolves.
-        </p>
+        <div class="row">
+          <div class="col-6 card">
+            <h2 id="section-approach">A simple, incremental approach</h2>
+            <p>
+              Duo Budget is growing step by step, starting with the essentials
+              and expanding as the vision evolves.
+            </p>
+          </div>
+          <div class="col-6 card">
+            <h2>Thoughts on Time and Money</h2>
+            <p>
+              Many things can be said about
+              <a href="https://en.wikipedia.org/wiki/Time" target="_blank"
+                >Time</a
+              >
+              and
+              <a href="https://en.wikipedia.org/wiki/Money" target="_blank"
+                >Money</a
+              >.
+            </p>
+            <p>Disorganized doesn't have to be one of them.</p>
+          </div>
+        </div>
       </section>
+
+      <section>
+        <div class="row is-center">
+          <div class="col-8 text-center">
+            <h2>Get updates as we build</h2>
+            <p>
+              We’re building Duo Budget in the open. Join the list to get
+              updates and early access.
+            </p>
+
+            <form>
+              <label for="email">Email</label>
+              <div class="grouped">
+                <input id="email" name="email" type="email" required />
+                <button type="submit">Join the List</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <h2>Get updates as we build</h2>
+        <p>
+          We’re building Duo Budget in the open. Join the list to get updates
+          and early access.
+        </p>
+
+        <form>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <button type="submit">Join the List</button>
+        </form>
+      </section> -->
     </main>
-    <aside>
-      <h2>Thoughts on Time and Money</h2>
-      <p>
-        Many things can be said about
-        <a href="https://en.wikipedia.org/wiki/Time" target="_blank">Time</a>
-        and
-        <a href="https://en.wikipedia.org/wiki/Money" target="_blank">Money</a>.
-      </p>
-      <p>Disorganized doesn't have to be one of them.</p>
-    </aside>
-
-    <section id="signup">
-      <h2>Get updates as we build</h2>
-      <p>
-        We’re building Duo Budget in the open. Join the list to get updates and
-        early access.
-      </p>
-
-      <form>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-        <button type="submit">Join the List</button>
-      </form>
-    </section>
-
-    <footer>
+    <footer class="container">
       <p>
         Duo Budget is an early-stage project. All content subject to change.
       </p>

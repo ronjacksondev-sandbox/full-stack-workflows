@@ -11,7 +11,7 @@ The business decisions in this course are theoretical and not recommended.
 
 1. [Product Vision Board](workflows/product-concept/product-vision-board/overview.md)  (Basic HTML/CSS/JS)
 1. [Idea Validation Plan](workflows/product-concept/idea-validation-plan/overview.md) (Micro CSS Framework)
-1. [Landing page](workflows/static-landing-page/overview.md)
+1. [Landing page](workflows/static-landing-page/overview.md) (Site Analytics)
 1. Landing page metrics
 1. Survey
 1. Interview notes
@@ -22,7 +22,7 @@ The business decisions in this course are theoretical and not recommended.
 1. Initial Roadmap
 1. Concept Brief
 1. Early press kit
-1. [Eleventy Markdown](workflows/eleventy-markdown/overview.md)
+1. [SSG - Eleventy Markdown](workflows/eleventy-markdown/overview.md)
 
 
 ## Product Discovery  

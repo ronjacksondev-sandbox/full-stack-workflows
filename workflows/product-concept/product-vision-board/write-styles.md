@@ -3,7 +3,7 @@
 Integrate orange and green into the page design
 
 ## Add `hr` elements below the `main title`
-```
+``` html
 <hr class="top-hr"/>
 <hr class="bottom-hr"/>
 ```
@@ -25,10 +25,22 @@ Integrate orange and green into the page design
 </style>
 ```
 
+## Run tests
+``` bash
+node --test
+```
+
+- Expectations: All tests should pass
+
+## View page in browser
+``` bash
+npm run start
+```
+
 ## Git commit
 ``` bash
 git add .
-git commit -m 'Adds stylesheets and brand colors'
+git commit -m 'Adds brand colors'
 ```
 
 Next:  

@@ -11,7 +11,10 @@
 <main>
   <section>
     <h2>Vision</h2>
-    <p>Help people understand how <em>time</em> and <em>money</em> work together.</p>
+    <p>
+      Help people understand how <em>time</em> and <em>money</em> work
+      together.
+    </p>
     <p>Make clearer, more confident decisions.</p>
   </section>
 </main>
@@ -20,11 +23,18 @@
 </footer>
 ```
 
-## View page in browser
+## Run tests
+``` bash
+node --test
+```
+- Expectations:
+    - First and Second test will pass
+    - Third test will fail
+
+## View page progress in browser
 ``` bash
 npm run start
 ```
-- Expectation: page should load with content visible
 
 ## Git Commit
 ``` bash

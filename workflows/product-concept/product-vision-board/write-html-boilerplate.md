@@ -13,15 +13,14 @@ code .
 ## Write `html` and `head` elements
 - Leave `body` element empty for now
 ``` html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title> Duo Budget - Product Vision Board</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>Duo Budget – Product Vision Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-
   </body>
 </html>
 ```

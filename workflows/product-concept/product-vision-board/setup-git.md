@@ -49,6 +49,17 @@ git push --set-upstream origin main
 npx gitignore node
 ```
 
+## Create README.md
+``` bash
+echo '# Product Vision Board' >> README.md
+```
+
+## Commit
+``` bash
+git add ..
+git commit -m 'Adds gitignore and README'
+```
+
 Next:  
 [Setup Node](setup-node.md)
 

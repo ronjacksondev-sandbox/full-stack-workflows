@@ -20,5 +20,16 @@ Water CSS is a classless framework so styles are applied without adding any clas
 
 ```
 
+## View page change
+``` bash
+npm run start
+```
+
+## Commit
+``` bash
+git add .
+git commit -m 'Adds water.css framework'
+```
+
 Next:  
 [Write Styles](write-styles.md)

@@ -2,7 +2,7 @@
 
 ## Initialize Node (package.json)
 ``` bash
-npm init -y --init-type= module
+npm init -y --init-type=module
 ```
 - y = yes to all prompt defaults
 - module = use esm instead of commonjs
@@ -23,7 +23,7 @@ npm pkg set scripts.start="http-server . -a localhost -c-1"
 ## Commit
 ``` bash
 git add .
-git commit -m 'Adds node infrastructure'
+git commit -m 'Adds node initialization'
 ```
 
 Next:  

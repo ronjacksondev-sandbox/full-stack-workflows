@@ -7,15 +7,15 @@ npm init -y --init-type=module
 - y = yes to all prompt defaults
 - module = use esm instead of commonjs
 
-## Setup `http-server`
+## Setup `live-server`
 ``` bash
-npm install --save-dev http-server
+npm install --save-dev live-server
 ```
 - save-dev = set as development only dependency
 
 ## Add `start` to scripts
 ``` bash
-npm pkg set scripts.start="http-server . -a localhost -c-1"
+npm pkg set scripts.start="live-server . --host=localhost"
 ```
 - localhost = serve only on the localhost port
 - c-1 = disable caching

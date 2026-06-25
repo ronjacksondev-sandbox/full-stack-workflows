@@ -1,7 +1,10 @@
 # Setup Git
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > Product Concept > [Landing Page](overview.md) > Setup Git
+
 ## Create remote repository
 > GitHub > New Repository
+> Visibility = *Public*
 > Copy link to remote repository
 
 ## Add directory
@@ -34,3 +37,25 @@ git commit --allow-empty -m 'Initial commit'
 ``` bash
 git push --set-upstream origin main
 ```
+
+## Setup gitignore
+``` bash
+npx gitignore node
+```
+
+## Create README.md
+``` bash
+echo '# Landing Page' >> README.md
+```
+
+## Commit
+``` bash
+git add ..
+git commit -m 'Adds gitignore and README'
+```
+
+
+| | |
+| :--- | ---: |
+| [< Previous: Read Objectives](objectives.md) | [Next: Setup Node >](setup-node.md) |
+| | |

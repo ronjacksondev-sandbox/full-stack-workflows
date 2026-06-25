@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Duo Budget – Time & Money, Together</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+    <style>
+      :root {
+        --mint: #7bcfa9;
+        --mint-dark: #63b892;
+        --apricot: #f6a85a;
+        --off-white: #fffdf9;
+        --gray: #e5e5e5;
+        --light-gray: #fafafa;
+
+        --color-primary: var(--mint);
+      }
+
+      body {
+        background: var(--light-gray);
+      }
+
+      .container {
+        padding: 5rem 2.5rem;
+      }
+
+      .hero {
+        padding: 10rem 1rem;
+        background: var(--off-white);
+        border-bottom: 1px solid var(--gray);
+      }
+
+      .hero p {
+        max-width: 600px;
+        margin: 1rem auto;
+      }
+
+      .cta-form input {
+        min-width: 250px;
+        max-width: 500px;
+        margin: 0 1rem;
+      }
+
+      .feature {
+        background: var(--off-white);
+        padding: 2rem;
+        border-radius: 8px;
+        border-top: 4px solid var(--apricot);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .feature h3 {
+        color: var(--apricot);
+      }
+
+      .value-prop {
+        background: white;
+        padding: 6rem 2rem;
+      }
+
+      .value-prop p {
+        max-width: 600px;
+        margin: 2rem auto;
+      }
+
+      .testimonial {
+        background: var(--off-white);
+        padding: 5rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .author {
+        font-weight: 600;
+        color: var(--mint-dark);
+      }
+
+      footer {
+        padding: 3rem 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <section class="hero text-center">
+      <h1>Duo Budget</h1>
+      <p>Understand how your time and money work together.</p>
+      <p>One set of categories. One clear picture of your life.</p>
+
+      <!-- CTA Form -->
+      <form class="cta-form is-horizontal-align">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Join Newsletter</button>
+      </form>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="container">
+      <h2>Why Duo Budget?</h2>
+
+      <div class="features row">
+        <div class="feature col">
+          <h3>Unified Categories</h3>
+          <p>
+            Track time and money using the same categories so you can finally
+            see how your resources align.
+          </p>
+        </div>
+
+        <div class="feature col">
+          <h3>Simple Logging</h3>
+          <p>
+            Record time or expenses in seconds. No clutter, no complexity — just
+            clarity.
+          </p>
+        </div>
+
+        <div class="feature col">
+          <h3>Insightful Summaries</h3>
+          <p>
+            See where your hours and dollars go each week. Spot patterns and
+            make better decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPOSITION -->
+    <section class="value-prop text-center">
+      <h2>Time and Money Are Connected</h2>
+      <p>
+        Most tools treat time and money as separate worlds. Duo Budget brings
+        them together so you can understand the true cost of your habits,
+        projects, and priorities.
+      </p>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="container">
+      <div class="testimonial text-center">
+        <p>
+          “Many things can be said about time and money.
+          <br />Disorganized doesn't have to be one of them.”
+        </p>
+        <div class="author">— Duo Budget Founder</div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <p>&copy; Duo Budget</p>
+    </footer>
+  </body>
+</html>

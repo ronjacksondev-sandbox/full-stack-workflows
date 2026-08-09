@@ -1,5 +1,7 @@
 # Setup Node
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Setup Node
+
 ## Initialize Node (package.json)
 ``` bash
 npm init -y --init-type=module
@@ -26,5 +28,7 @@ git add .
 git commit -m 'Adds node initialization'
 ```
 
-Next:  
-[Write HTML boilerplate](write-html-boilerplate.md)
+| | |
+| :--- | ---: |
+| [< Previous: Setup Git](setup-git.md) | [Next: Write HTML Boilerplate >](write-html-boilerplate.md) |
+| | |

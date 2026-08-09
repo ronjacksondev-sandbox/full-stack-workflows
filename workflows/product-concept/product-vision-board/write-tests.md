@@ -1,5 +1,8 @@
 # Write Tests
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Write Tests
+
+
 - Write some tests to verify our web page is doing what we want
 
 ## Install JSDOM
@@ -31,29 +34,17 @@ test("HTML <head> checks", () => {
 test("HTML <body> checks", () => {
   const header = document.querySelector("header");
   assert.ok(header, "Missing <header>");
-  assert.ok(header.querySelector("h1"), "<header> does not contain <h1>");
 });
 
-test("HTML <hr> color checks", () => {
-  const hrs = Array.from(document.querySelectorAll("hr"));
-  assert.ok(hrs.length >= 2, "Missing <hr> elements");
-
-  const hasOrange = hrs.some((hr) => hr.style.color === "orange" || hr.getAttribute("style")?.includes("color: orange"));
-  const hasGreen = hrs.some((hr) => hr.style.color === "green" || hr.getAttribute("style")?.includes("color: green"));
-
-  assert.ok(hasOrange, "Missing <hr> with orange color");
-  assert.ok(hasGreen, "Missing <hr> with green color");
-});
 ```
 
 ## Run Tests
 ``` bash
 node --test
 ```
-- Expectations:
-    - First test will pass.
-    - Second and third tests will fail.
+- Expectation: Tests will pass
 
-Next:  
-[Write HTML body](write-html-body.md)  
-
+| | |
+| :--- | ---: |
+| [< Previous: Write Dark Mode](write-dark-mode.md) | [Next: Deploy Page >](deploy-page.md) |
+| | |

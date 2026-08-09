@@ -1,5 +1,8 @@
 # Setup CSS Framework
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Setup CSS Framework
+
+
 Add basic page styling with [Water CSS](https://watercss.kognise.dev/)  
 Water CSS is a classless framework so styles are applied without adding any classes to your html.
 
@@ -31,5 +34,7 @@ git add .
 git commit -m 'Adds water.css framework'
 ```
 
-Next:  
-[Write Styles](write-styles.md)
+| | |
+| :--- | ---: |
+| [< Previous: Write HTML Body](write-html-body.md) | [Next: Write Styles >](write-styles.md) |
+| | |

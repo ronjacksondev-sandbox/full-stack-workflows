@@ -1,5 +1,8 @@
 # Deploy Page
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Deploy Page
+
+
 ## Activate GitHub Pages on GitHub.com repo
 
 >[Repository] > Settings > Pages > Build and Deployment > Source > GitHub Actions
@@ -59,3 +62,10 @@ git push
 ## View live page on GitHub
 > Find link on GitHub repo > settings > pages > Your site is live at ...
 
+
+Product Vision Board is Finished.
+
+| | |
+| :--- | ---: |
+| [< Previous: Write Tests](write-tests.md) | [Back to: Product Vision Board >](../product-vision-board/index.md) |
+| | |

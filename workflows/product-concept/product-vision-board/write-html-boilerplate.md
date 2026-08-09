@@ -1,5 +1,7 @@
 # Write HTML Boilerplate
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Setup HTML Boilerplate
+
 ## Create File
 ``` bash
 touch index.html
@@ -26,7 +28,9 @@ code .
 ```
 
 
-Next:  
-[Write tests](write-tests.md)
+| | |
+| :--- | ---: |
+| [< Previous: Setup Node](setup-node.md) | [Next: Write HTML Body >](write-html-body.md) |
+| | |
 
 

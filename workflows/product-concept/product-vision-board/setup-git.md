@@ -1,5 +1,8 @@
 # Setup Git
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Setup Git
+
+
 ## Create remote repository on GitHub
 - Repo Name: product-vision-board
 - Set visibility to public (so GitHub pages can be enabled)
@@ -60,6 +63,8 @@ git add ..
 git commit -m 'Adds gitignore and README'
 ```
 
-Next:  
-[Setup Node](setup-node.md)
+| | |
+| :--- | ---: |
+| [< Previous: Read Tech Stack](tech-stack.md) | [Next: Setup Node >](setup-node.md) |
+| | |
 

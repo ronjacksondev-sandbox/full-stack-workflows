@@ -1,5 +1,8 @@
 # Write Dark Mode
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Write Dark Mode
+
+
 - Add toggle by query string
 - Add toggle by button
 
@@ -70,5 +73,7 @@ git add .
 git commit -m 'Adds dark mode functionality'
 ```
 
-Next:  
-[Deploy Page](deploy-page.md)
+| | |
+| :--- | ---: |
+| [< Previous: Write Styles](write-styles.md) | [Next: Write Tests >](write-tests.md) |
+| | |

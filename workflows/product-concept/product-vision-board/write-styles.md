@@ -1,8 +1,11 @@
 # Write Styles
 
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Write Styles
+
+
 Integrate orange and green into the page design
 
-## Add `hr` elements below the `main title`
+## Add `hr` elements below the `h1`
 ``` html
 <hr class="top-hr"/>
 <hr class="bottom-hr"/>
@@ -25,13 +28,6 @@ Integrate orange and green into the page design
 </style>
 ```
 
-## Run tests
-``` bash
-node --test
-```
-
-- Expectations: All tests should pass
-
 ## View page in browser
 ``` bash
 npm run start
@@ -43,5 +39,7 @@ git add .
 git commit -m 'Adds brand colors'
 ```
 
-Next:  
-[Write Dark Mode](write-dark-mode.md)
+| | |
+| :--- | ---: |
+| [< Previous: Setup CSS Framework](setup-css-framework.md) | [Next: Write Dark Mode >](write-dark-mode.md) |
+| | |

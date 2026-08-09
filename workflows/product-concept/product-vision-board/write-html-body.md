@@ -1,4 +1,7 @@
 # Write HTML Body
+
+[Home](../../../index.md) > [Course](../../../course-outline.md) > [Product Concept](../index.md) > [Product Vision Board](../product-vision-board/index.md) > Write HTML Body
+
 - The product vision board content is shortened to reduce typing time
 - TODO: make a link to the full product vision board content as an fyi or for additional html practice
 
@@ -23,14 +26,6 @@
 </footer>
 ```
 
-## Run tests
-``` bash
-node --test
-```
-- Expectations:
-    - First and Second test will pass
-    - Third test will fail
-
 ## View page progress in browser
 ``` bash
 npm run start
@@ -42,5 +37,7 @@ git add .
 git commit -m 'Adds index page with html`
 ```
 
-Next:  
-[Setup CSS Framework](setup-css-framework.md)
+| | |
+| :--- | ---: |
+| [< Previous: Write HTML Boilerplate](write-html-boilerplate.md) | [Next: Setup CSS Framekwork >](setup-css-framework.md) |
+| | |

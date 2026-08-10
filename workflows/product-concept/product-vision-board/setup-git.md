@@ -4,11 +4,11 @@
 
 
 ## Create remote repository on GitHub
-- Repo Name: product-vision-board
-- Set visibility to public (so GitHub pages can be enabled)
-- Set 'No .gitignore'
+- **Repo Name:** product-vision-board
+- **Visibility:** Public
+- **.gitignore:** 'No .gitignore'
 
-> GitHub > New Repository
+> GitHub > New Repository > Create repository
 > Copy link to remote repository
 
 ## Open terminal and navigate to repo folder
@@ -32,9 +32,9 @@ git init
 git remote add origin <remote-repo-link>
 ```
 
-## Setup branch
+## Setup branch name
 ``` bash
-git branch -M main
+git branch -move main
 ```
 
 ## Setup initial commit
